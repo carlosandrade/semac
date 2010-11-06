@@ -60,20 +60,16 @@ class StudentTest < ActiveSupport::TestCase
     assert !@jose_roberto.save, "Saved a student without a registration"
   end
 
-  #Teste precisando ser corrigido(Problema na logica de verificação do teste, funciona via browser)
-  
-  test "registration must be unique" do
-    flunk :flunk
-   @student_a = Student.new(:name => "a", :email => "aroberto@null.com", :registration => 3)
-    @student_b = Student.new(:name => "b", :email => "bluis@null.com", :registration => 1)
-    
-    #assert !@student_a.save, "Primeiro erro"
-    #assert !@student_b.save, "Saved the same registration on database, registration is not unique"
-  end
-
   test "registration must be a number" do
     @jose_roberto.registration = "abc"
     assert !@jose_roberto.save, "Student registration is not a number"
+  end
+
+  test "registration must be unique" do
+    @jose_roberto.save
+    @joao_paulo = Student.new(:name => "Joao Paulo", :email => "joao@null.com", :registration => @jose_roberto.registration)
+
+    assert !@joao_paulo.save, "Saved the same registration on database, registration is not unique"
   end
 
 end
