@@ -1,0 +1,122 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (41.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (336.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStudents (20101106194248)
+  [4;36;1mSQL (200.3ms)[0m   [0;1mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `registration` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (74.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101106194248')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `students`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `students`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-11-06 16:53:01) [GET]
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM `students` [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 38ms (View: 31, DB: 0) | 200 OK [http://localhost/students]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentsController#new (for 127.0.0.1 at 2010-11-06 16:53:10) [GET]
+  [4;35;1mStudent Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+Rendering template within layouts/students
+Rendering students/new
+Completed in 78ms (View: 69, DB: 1) | 200 OK [http://localhost/students/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-11-06 16:53:31) [GET]
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT * FROM `students` [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/students]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentsController#new (for 127.0.0.1 at 2010-11-06 16:54:20) [GET]
+  [4;35;1mStudent Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+Rendering template within layouts/students
+Rendering students/new
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/students/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentsController#create (for 127.0.0.1 at 2010-11-06 16:55:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"TnBtDMdBw9brzdm59b4wREJ6lv3+V6nZ7wCC98dOuvU=", "student"=>{"name"=>"Carlos Andrade", "registration"=>"209102527", "email"=>"carlos@email.com"}}
+  [4;35;1mStudent Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Carlos Andrade', '2010-11-06 19:55:09', '2010-11-06 19:55:09', 209102527, 'carlos@email.com')[0m
+  [4;36;1mSQL (57.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/students/1
+Completed in 72ms (DB: 58) | 302 Found [http://localhost/students]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-11-06 16:55:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM `students` WHERE (`students`.`id` = 1) [0m
+Rendering template within layouts/students
+Rendering students/show
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/students/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-11-06 16:55:13) [GET]
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM `students` [0m
+Rendering template within layouts/students
+Rendering students/index
+  [4;36;1mStudent Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `students`[0m
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/students]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `semac_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `semac_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (54.0ms)[0m   [0;1mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `registration` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (253.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20101106194248')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (42.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `semac_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `semac_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (235.4ms)[0m   [0;1mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `registration` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (176.5ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (112.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20101106194248')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (59.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `semac_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `semac_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (66.3ms)[0m   [0;1mCREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `registration` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (100.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (378.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (15.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20101106194248')[0m
