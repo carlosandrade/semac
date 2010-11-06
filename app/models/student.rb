@@ -22,4 +22,11 @@ class Student < ActiveRecord::Base
   #Student emails should not exceed 100 chars
   validates_length_of :email, :maximum=>100
 
+#Registration validations
+  
+  #Does not allow student registration to be empyt
+  validates_presence_of :registration
+
+
+
 end
