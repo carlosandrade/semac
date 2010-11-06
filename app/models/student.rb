@@ -30,5 +30,7 @@ class Student < ActiveRecord::Base
   #Verify if registration is a number
   validates_numericality_of :registration
 
+  #Registration must be unique
+  validates_uniqueness_of :registration
   
 end
