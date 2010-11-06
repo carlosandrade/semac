@@ -2,7 +2,7 @@ class Student < ActiveRecord::Base
 
 #Name validations
 
-  #Does not allow student names to be empyt
+  #Does not allow student names to be empty
   validates_presence_of :name
 
   #Student names must be unique
@@ -13,7 +13,7 @@ class Student < ActiveRecord::Base
 
 #Email validations
 
-  #Does not allow student email to be empyt
+  #Does not allow student email to be empty
   validates_presence_of :email
 
   #Student emails must be unique
@@ -24,7 +24,7 @@ class Student < ActiveRecord::Base
 
 #Registration validations
   
-  #Does not allow student registration to be empyt
+  #Does not allow student registration to be empty
   validates_presence_of :registration
 
   #Verify if registration is a number
