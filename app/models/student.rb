@@ -26,7 +26,9 @@ class Student < ActiveRecord::Base
   
   #Does not allow student registration to be empyt
   validates_presence_of :registration
-  
+
+  #Verify if registration is a number
+  validates_numericality_of :registration
 
   
 end
