@@ -71,6 +71,9 @@ class StudentTest < ActiveSupport::TestCase
     #assert !@student_b.save, "Saved the same registration on database, registration is not unique"
   end
 
-
+  test "registration must be a number" do
+    @jose_roberto.registration = "abc"
+    assert !@jose_roberto.save, "Student registration is not a number"
+  end
 
 end
