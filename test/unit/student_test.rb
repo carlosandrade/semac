@@ -4,14 +4,14 @@ class StudentTest < ActiveSupport::TestCase
 
   def setup
     
-    #Instance variables for names and email tests
+    #Instance variables for names,email and registration tests
     @jose_roberto = Student.new(:name => "Jose Roberto", :email => "roberto@null.com", :registration => 20101255)
     @jose_roberto_almeida = Student.new(:name => "Jose Roberto", :email => "roberto@null.com", :registration => 2923132)
    
   end
 
   def teardown
-    #Teardown for names and email tests
+    #Teardown for names,email and registration tests
     @jose_roberto = nil
     @jose_roberto_almeida = nil
 
@@ -53,6 +53,12 @@ class StudentTest < ActiveSupport::TestCase
    assert !@big_email_student.save, "Student with an email over 100 chars has been saved"
   end
 
+#Registration tests
+  
+  test "should have a registration number" do
+    @jose_roberto.registration = nil
+    assert !@jose_roberto.save, "Saved a student without a registration"
+  end
 
 
 
