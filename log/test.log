@@ -101,3 +101,16 @@ Completed in 3ms (DB: 1) | 302 Found [http://test.host/students/980190962?]
   [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
   [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 20:26:37', '2010-11-06 20:26:37', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Create (0.1ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 20:26:37', '2010-11-06 20:26:37', 2923132, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (14.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
