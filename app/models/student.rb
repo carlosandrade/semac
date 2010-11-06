@@ -6,4 +6,7 @@ class Student < ActiveRecord::Base
   #Garante a unicidade de nome por estudante na base de dados
   validates_uniqueness_of :name
 
+  #Verifica se um estudante com nome acima de cem caracteres foi salvo
+  validates_length_of :name, :maximum=>100
+
 end
