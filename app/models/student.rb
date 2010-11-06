@@ -26,7 +26,7 @@ class Student < ActiveRecord::Base
   
   #Does not allow student registration to be empyt
   validates_presence_of :registration
+  
 
-
-
+  
 end

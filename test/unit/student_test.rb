@@ -6,7 +6,7 @@ class StudentTest < ActiveSupport::TestCase
     
     #Instance variables for names,email and registration tests
     @jose_roberto = Student.new(:name => "Jose Roberto", :email => "roberto@null.com", :registration => 20101255)
-    @jose_roberto_almeida = Student.new(:name => "Jose Roberto", :email => "roberto@null.com", :registration => 2923132)
+    @jose_roberto_almeida = Student.new(:name => "Jose Roberto", :email => "roberto@null.com", :registration => 20101255)
    
   end
 
@@ -60,6 +60,12 @@ class StudentTest < ActiveSupport::TestCase
     assert !@jose_roberto.save, "Saved a student without a registration"
   end
 
-
+  test "registration must be unique" do
+   @student_a = Student.new(:name => "a", :email => "aroberto@null.com", :registration => 3)
+    @student_b = Student.new(:name => "b", :email => "bluis@null.com", :registration => 1)
+    
+    assert !@student_a.save, "Primeiro erro"
+    assert !@student_b.save, "Saved the same registration on database, registration is not unique"
+  end
 
 end

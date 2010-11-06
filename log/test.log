@@ -345,3 +345,762 @@ Completed in 3ms (DB: 1) | 302 Found [http://test.host/students/980190962?]
   [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
   [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.7ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:13:55', '2010-11-06 21:13:55', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (23.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:13:55', '2010-11-06 21:13:55', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (44.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:13:55', '2010-11-06 21:13:55', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (32.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (1.0ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.8ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:15:12', '2010-11-06 21:15:12', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (32.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.8ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:15:12', '2010-11-06 21:15:12', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:15:12', '2010-11-06 21:15:12', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (39.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:17:22', '2010-11-06 21:17:22', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (65.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:17:22', '2010-11-06 21:17:22', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (30.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:17:22', '2010-11-06 21:17:22', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (1.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (29.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`registration` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 20101255) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 1232351) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`registration` = 1232351) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:18:41', '2010-11-06 21:18:41', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (40.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:18:41', '2010-11-06 21:18:41', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (39.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:18:41', '2010-11-06 21:18:41', 1234, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (40.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.7ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:19:07', '2010-11-06 21:19:07', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (30.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:19:07', '2010-11-06 21:19:07', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (17.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:19:07', '2010-11-06 21:19:07', 1234, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:31:31', '2010-11-06 21:31:31', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (41.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:31:31', '2010-11-06 21:31:31', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (33.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:31:31', '2010-11-06 21:31:31', 1234, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (16.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:38:09', '2010-11-06 21:38:09', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (3.0ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (29.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:38:09', '2010-11-06 21:38:09', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (18.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:38:09', '2010-11-06 21:38:09', 1234, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (32.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:40:18', '2010-11-06 21:40:18', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (16.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:40:18', '2010-11-06 21:40:18', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (19.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:40:18', '2010-11-06 21:40:18', 1234, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (35.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:42:01', '2010-11-06 21:42:01', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (41.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:42:01', '2010-11-06 21:42:01', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (24.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:42:01', '2010-11-06 21:42:01', 2456, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (25.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.6ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:43:59', '2010-11-06 21:43:59', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (38.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:43:59', '2010-11-06 21:43:59', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (51.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:44:00', '2010-11-06 21:44:00', 2456, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (33.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:44:47', '2010-11-06 21:44:47', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (21.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:44:47', '2010-11-06 21:44:47', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (32.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'a') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'aroberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('a', '2010-11-06 21:44:47', '2010-11-06 21:44:47', 20101255, 'aroberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (25.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.2ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:45:17', '2010-11-06 21:45:17', 20101255, 'roberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (24.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('Jose Roberto', '2010-11-06 21:45:17', '2010-11-06 21:45:17', 20101255, 'roberto@null.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (39.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'a') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'aroberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO `students` (`name`, `created_at`, `updated_at`, `registration`, `email`) VALUES('a', '2010-11-06 21:45:17', '2010-11-06 21:45:17', 3, 'aroberto@null.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT `students`.id FROM `students` WHERE (`students`.`name` = BINARY ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT `students`.id FROM `students` WHERE (`students`.`email` = BINARY 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
