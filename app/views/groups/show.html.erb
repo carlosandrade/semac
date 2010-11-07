@@ -1,0 +1,28 @@
+<p>
+  <b>Year:</b>
+  <%=h @group.year %>
+</p>
+
+<p>
+  <b>Semester:</b>
+  <%=h @group.semester %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%=h @group.number %>
+</p>
+
+<p>
+  <b>Id teacher:</b>
+  <%=h @group.id_teacher %>
+</p>
+
+<p>
+  <b>Id course:</b>
+  <%=h @group.id_course %>
+</p>
+
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>
