@@ -1,5 +1,8 @@
 class Activity < ActiveRecord::Base
 
+#Relationship
+  belongs_to :group
+
 #Title validations
   
   #Does not allow student registration to be empty
@@ -9,4 +12,6 @@ class Activity < ActiveRecord::Base
   
   #Does not allow specification registration to be empyt
   validates_presence_of :specification
+
+
 end
