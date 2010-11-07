@@ -10,6 +10,7 @@ class ActivityTest < ActiveSupport::TestCase
   end
 
   test "activity must have a title" do
+    @atividade.title = nil
     assert !@atividade.save, "Activity without title has been saved"  
   end
 
