@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(:version => 20101108034231) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
   create_table "students_groups", :id => false, :force => true do |t|
     t.integer "student_id"
     t.integer "group_id"
@@ -61,6 +60,4 @@ ActiveRecord::Schema.define(:version => 20101108034231) do
     t.datetime "updated_at"
   end
 
-=======
->>>>>>> origin/master
 end
