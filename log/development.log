@@ -8901,3 +8901,4 @@ Processing StudentsController#index (for 127.0.0.1 at 2010-11-09 00:38:48) [GET]
 Rendering template within layouts/students
 Rendering students/index
 Completed in 22ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/students]
+

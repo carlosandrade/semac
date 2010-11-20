@@ -3947,3 +3947,4 @@ Completed in 3ms (DB: 1) | 302 Found [http://test.host/students/980190962?]
   [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
   [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
   [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+
