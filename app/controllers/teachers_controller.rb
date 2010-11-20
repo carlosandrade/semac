@@ -37,6 +37,10 @@ class TeachersController < ApplicationController
     @teacher = Teacher.find(params[:id])
   end
 
+  def show_groups
+    @teacher = Teacher.find(params[:id])
+  end
+
   # POST /teachers
   # POST /teachers.xml
   def create

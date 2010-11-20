@@ -5,8 +5,6 @@
     <th>Year</th>
     <th>Semester</th>
     <th>Number</th>
-    <th>Id teacher</th>
-    <th>Id course</th>
   </tr>
 
 <% @groups.each do |group| %>
@@ -14,8 +12,6 @@
     <td><%=h group.year %></td>
     <td><%=h group.semester %></td>
     <td><%=h group.number %></td>
-    <td><%=h group.id_teacher %></td>
-    <td><%=h group.id_course %></td>
     <td><%= link_to 'Show', group %></td>
     <td><%= link_to 'Edit', edit_group_path(group) %></td>
     <td><%= link_to 'Destroy', group, :confirm => 'Are you sure?', :method => :delete %></td>

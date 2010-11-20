@@ -1,0 +1,16 @@
+<p>
+  <b>Student:</b>
+  <%=h @student.name %> - <%=h @student.registration %>
+  </ br>
+</p>
+
+<p>
+  <b>Groups:</b>
+  <ul>
+    <% @student.groups.each do |g| %>
+      <li><%=h g.course.code %> - <%=h g.course.name %></li>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Back', @student %>

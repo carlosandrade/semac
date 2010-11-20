@@ -37,6 +37,23 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
+  def show_groups
+    @student = Student.find(params[:id])
+  end
+
+  def add_group
+    @error = false
+    @student = Student.find(params[:id])
+    begin
+      group = Group.find(params[:group_id])
+    rescue ActiveRecord::RecordNotFound
+      @error = true
+    end
+    if !@error
+      @student.groups.push(group)
+    end
+  end
+
   # POST /students
   # POST /students.xml
   def create

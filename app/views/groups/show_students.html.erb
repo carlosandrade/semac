@@ -1,0 +1,15 @@
+<p>
+  <b>Group:</b>
+  <%=h @group.year %>.<%=h @group.semester %>  <%=h @group.number %>
+  </ br>
+</p>
+
+<p>
+  <b>Students:</b>
+  <ul>
+    <% @group.students.each do |s| %>
+      <li><%=h s.name %> - <%=h s.registration %></li>
+    <% end %>
+  </ul>
+</p>
+<%= link_to 'Back', :action => "manage_group", :id => @group %> 

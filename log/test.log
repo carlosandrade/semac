@@ -2937,3 +2937,1013 @@ Completed in 3ms (DB: 1) | 302 Found [http://test.host/students/980190962?]
   [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
   [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
   [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:04:38', 'MATA62', '2010-11-08 01:04:38')[0m
+  [4;35;1mCourse Create (0.4ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Fisica 3', '2010-11-08 01:04:38', 'MATA62', '2010-11-08 01:04:38')[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:04:38', 'MATA5022222', '2010-11-08 01:04:38')[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I', '2010-11-08 01:04:38', 'MATA62', '2010-11-08 01:04:38')[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:04:38', 'MATA62', '2010-11-08 01:04:38')[0m
+  [4;35;1mCourse Create (0.1ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:04:38', 'MATB12', '2010-11-08 01:04:38')[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:04:38', NULL, '2010-11-08 01:04:38')[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES(NULL, '2010-11-08 01:04:38', 'MATA62', '2010-11-08 01:04:38')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:04:38', '2010-11-08 01:04:38', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.6ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:04:38', '2010-11-08 01:04:38', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:04:38', '2010-11-08 01:04:38', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:04:38', '2010-11-08 01:04:38', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.5ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:04:38', '2010-11-08 01:04:38', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:04:38', '2010-11-08 01:04:38', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:04:38', '2010-11-08 01:04:38', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:06:23', 'MATA62', '2010-11-08 01:06:23')[0m
+  [4;35;1mCourse Create (0.1ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Fisica 3', '2010-11-08 01:06:23', 'MATA62', '2010-11-08 01:06:23')[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:06:23', 'MATA5022222', '2010-11-08 01:06:23')[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I', '2010-11-08 01:06:23', 'MATA62', '2010-11-08 01:06:23')[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:06:23', 'MATA62', '2010-11-08 01:06:23')[0m
+  [4;35;1mCourse Create (0.1ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:06:23', 'MATB12', '2010-11-08 01:06:23')[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:06:23', NULL, '2010-11-08 01:06:23')[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES(NULL, '2010-11-08 01:06:23', 'MATA62', '2010-11-08 01:06:23')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:06:23', '2010-11-08 01:06:23', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:06:23', '2010-11-08 01:06:23', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:06:23', '2010-11-08 01:06:23', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:06:23', '2010-11-08 01:06:23', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:06:23', '2010-11-08 01:06:23', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:06:23', '2010-11-08 01:06:23', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:07:10', 'MATA62', '2010-11-08 01:07:10')[0m
+  [4;35;1mCourse Create (0.1ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Fisica 3', '2010-11-08 01:07:10', 'MATA62', '2010-11-08 01:07:10')[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:07:10', 'MATA5022222', '2010-11-08 01:07:10')[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I', '2010-11-08 01:07:10', 'MATA62', '2010-11-08 01:07:10')[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:07:10', 'MATA62', '2010-11-08 01:07:10')[0m
+  [4;35;1mCourse Create (0.1ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:07:10', 'MATB12', '2010-11-08 01:07:10')[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 01:07:10', NULL, '2010-11-08 01:07:10')[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES(NULL, '2010-11-08 01:07:10', 'MATA62', '2010-11-08 01:07:10')[0m
+  [4;36;1mGroup Create (0.4ms)[0m   [0;1mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 01:07:10', 2, '2010-11-08 01:07:10', NULL, 2010, NULL)[0m
+  [4;35;1mGroup Create (0.4ms)[0m   [0mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 01:07:10', 2, '2010-11-08 01:07:10', NULL, 2010, NULL)[0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.5ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:07:10', '2010-11-08 01:07:10', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:07:10', '2010-11-08 01:07:10', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:07:10', '2010-11-08 01:07:10', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:07:10', '2010-11-08 01:07:10', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:07:10', '2010-11-08 01:07:10', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:07:10', '2010-11-08 01:07:10', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA5022222') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I Engenharia I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mGroup Create (0.5ms)[0m   [0;1mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 01:46:44', 2, '2010-11-08 01:46:44', NULL, 2010, NULL)[0m
+  [4;35;1mGroup Create (0.3ms)[0m   [0mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 01:46:44', 2, '2010-11-08 01:46:44', NULL, 2010, NULL)[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:46:44', '2010-11-08 01:46:44', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:46:44', '2010-11-08 01:46:44', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 01:46:44', '2010-11-08 01:46:44', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.8ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:46:44', '2010-11-08 01:46:44', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:46:44', '2010-11-08 01:46:44', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 01:46:44', '2010-11-08 01:46:44', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 02:05:16', 'MATA62', '2010-11-08 02:05:16')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 02:05:16', 'MATA62', '2010-11-08 02:05:16')[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mGroup Create (0.6ms)[0m   [0;1mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 02:05:16', 2, '2010-11-08 02:05:16', NULL, 2010, NULL)[0m
+  [4;35;1mGroup Create (0.4ms)[0m   [0mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 02:05:16', 2, '2010-11-08 02:05:16', NULL, 2010, NULL)[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 02:05:16', '2010-11-08 02:05:16', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.8ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 02:05:16', '2010-11-08 02:05:16', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 02:05:16', '2010-11-08 02:05:16', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 02:05:16', '2010-11-08 02:05:16', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (3.9ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 02:05:16', '2010-11-08 02:05:16', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 02:05:16', '2010-11-08 02:05:16', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.7ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mActivity Create (0.4ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-11-08 03:55:37', 'Prova', '2010-11-20', '2010-11-08 03:55:37', 'Assuntos da prova', NULL)[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.4ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 03:55:37', 'MATA62', '2010-11-08 03:55:37')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 03:55:37', 'MATA62', '2010-11-08 03:55:37')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mGroup Create (0.4ms)[0m   [0mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 03:55:37', 2, '2010-11-08 03:55:37', NULL, 2010, NULL)[0m
+  [4;36;1mGroup Create (0.5ms)[0m   [0;1mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 03:55:37', 2, '2010-11-08 03:55:37', NULL, 2010, NULL)[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 03:55:37', '2010-11-08 03:55:37', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.5ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 03:55:37', '2010-11-08 03:55:37', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 03:55:37', '2010-11-08 03:55:37', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 03:55:37', '2010-11-08 03:55:37', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 03:55:37', '2010-11-08 03:55:37', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.3ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 03:55:38', '2010-11-08 03:55:38', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 04:18:04', 'MATA62', '2010-11-08 04:18:04')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.4ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-08 04:18:04', 'MATA62', '2010-11-08 04:18:04')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mGroup Create (0.4ms)[0m   [0;1mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 04:18:04', 2, '2010-11-08 04:18:04', NULL, 2010, NULL)[0m
+  [4;35;1mGroup Create (0.4ms)[0m   [0mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-08 04:18:04', 2, '2010-11-08 04:18:04', NULL, 2010, NULL)[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 04:18:05', '2010-11-08 04:18:05', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.8ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 04:18:05', '2010-11-08 04:18:05', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-08 04:18:05', '2010-11-08 04:18:05', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.3ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 04:18:05', '2010-11-08 04:18:05', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 04:18:05', '2010-11-08 04:18:05', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-08 04:18:05', '2010-11-08 04:18:05', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 00:04:55', 'MATA62', '2010-11-09 00:04:55')[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.2ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 00:04:55', 'MATA62', '2010-11-09 00:04:55')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mGroup Create (0.3ms)[0m   [0;1mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-09 00:04:55', 2, '2010-11-09 00:04:55', NULL, 2010, NULL)[0m
+  [4;35;1mGroup Create (0.3ms)[0m   [0mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-09 00:04:56', 2, '2010-11-09 00:04:56', NULL, 2010, NULL)[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:04:56', '2010-11-09 00:04:56', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.6ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:04:56', '2010-11-09 00:04:56', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:04:56', '2010-11-09 00:04:56', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.3ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:04:56', '2010-11-09 00:04:56', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:04:56', '2010-11-09 00:04:56', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:04:56', '2010-11-09 00:04:56', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 00:07:00', 'MATA62', '2010-11-09 00:07:00')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 00:07:00', 'MATA62', '2010-11-09 00:07:00')[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mGroup Create (0.3ms)[0m   [0;1mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-09 00:07:00', 2, '2010-11-09 00:07:00', 1, 2010, NULL)[0m
+  [4;35;1mGroup Create (0.3ms)[0m   [0mINSERT INTO "groups" ("number", "created_at", "semester", "updated_at", "teacher_id", "year", "course_id") VALUES(1, '2010-11-09 00:07:00', 2, '2010-11-09 00:07:00', NULL, 2010, 1)[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:07:00', '2010-11-09 00:07:00', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:07:00', '2010-11-09 00:07:00', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:07:00', '2010-11-09 00:07:00', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.3ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:07:00', '2010-11-09 00:07:00', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.2ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:07:00', '2010-11-09 00:07:00', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:07:00', '2010-11-09 00:07:00', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 00:10:28', 'MATA62', '2010-11-09 00:10:28')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 00:10:28', 'MATA62', '2010-11-09 00:10:28')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:10:28', '2010-11-09 00:10:28', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:10:28', '2010-11-09 00:10:28', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 00:10:28', '2010-11-09 00:10:28', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.3ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:10:28', '2010-11-09 00:10:28', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.2ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:10:28', '2010-11-09 00:10:28', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.2ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 00:10:28', '2010-11-09 00:10:28', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 02:45:42', 'MATA62', '2010-11-09 02:45:42')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-09 02:45:42', 'MATA62', '2010-11-09 02:45:42')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.5ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 02:45:42', '2010-11-09 02:45:42', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 02:45:42', '2010-11-09 02:45:42', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-09 02:45:42', '2010-11-09 02:45:42', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 02:45:42', '2010-11-09 02:45:42', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 02:45:42', '2010-11-09 02:45:42', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-09 02:45:42', '2010-11-09 02:45:42', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m

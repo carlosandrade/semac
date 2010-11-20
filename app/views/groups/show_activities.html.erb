@@ -1,0 +1,17 @@
+<p>
+  <b>Group:</b>
+  <%=h @group.year %>.<%=h @group.semester %>  <%=h @group.number %>
+  </ br>
+</p>
+
+<p>
+  <b>Activities:</b>
+  <ul>
+    <% @group.activities.each do |a| %>
+      <li><%=h a.title %> - <%=h a.delivery_date %>
+          <p><%=h a.specification%></p>
+      </li>
+    <% end %>
+  </ul>
+</p>
+<%= link_to 'Back', :action => "manage_group", :id => @group %> 

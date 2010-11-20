@@ -55,8 +55,4 @@ class TeacherTest < ActiveSupport::TestCase
     assert !@teacher_novo.save, "Saved the same registration on database, registration is not unique"
   end
 
-# Group test
-  test "should have groups" do
-    assert_equals([], @teacher.save.groups)
-  end
 end

@@ -9,12 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101107021847) do
+ActiveRecord::Schema.define(:version => 20101108034231) do
 
   create_table "activities", :force => true do |t|
     t.string   "title"
     t.text     "specification"
     t.date     "delivery_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "group_id"
+  end
+
+  create_table "courses", :force => true do |t|
+    t.string   "name",       :limit => 60
+    t.string   "code",       :limit => 6
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -23,10 +31,10 @@ ActiveRecord::Schema.define(:version => 20101107021847) do
     t.integer  "year"
     t.integer  "semester"
     t.integer  "number"
-    t.integer  "id_teacher"
-    t.integer  "id_course"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "teacher_id"
+    t.integer  "course_id"
   end
 
   create_table "students", :force => true do |t|
@@ -35,6 +43,11 @@ ActiveRecord::Schema.define(:version => 20101107021847) do
     t.integer  "registration"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "students_groups", :id => false, :force => true do |t|
+    t.integer "student_id"
+    t.integer "group_id"
   end
 
   create_table "teachers", :force => true do |t|

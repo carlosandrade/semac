@@ -2,7 +2,7 @@ require 'test_helper'
 
 class GroupTest < ActiveSupport::TestCase
   def setup
-    @group = Group.new(:year => 2010, :semester => 02, :number => 1)
+    @group = Group.new(:year => 2010, :semester => 02, :number => 1, :teacher_id => 1, :course_id => 1)
   end
 
   def teardown
@@ -42,12 +42,12 @@ class GroupTest < ActiveSupport::TestCase
 
 # Relationship tests
   test "group must belong to a teacher" do
-    @group.id_teacher = nil
+    @group.teacher_id = nil
     assert !@group.save, "Saved a group without a teacher"
   end
 
   test "group must belong to a course" do
-    @group.id_course = nil
+    @group.course_id = nil
     assert !@group.save, "Saved a group without a course"
   end
 end

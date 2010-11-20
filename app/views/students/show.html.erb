@@ -13,6 +13,11 @@
   <%=h @student.registration %>
 </p>
 
-
+<% form_tag :action => 'add_group', :id => @student do %>
+  <%= text_field_tag "group_id" %>			
+  <%= submit_tag 'Add to Group' %>
+<% end %>
+<br>
+<%= link_to 'Show Groups', :action => "show_groups", :id => @student %> |
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
