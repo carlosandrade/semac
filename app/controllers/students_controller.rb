@@ -41,6 +41,11 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
+  def show_activities
+   @student = Student.find(params[:id])
+   @group = Group.find(params[:group_id])
+  end
+
   def add_group
     @error = false
     @student = Student.find(params[:id])

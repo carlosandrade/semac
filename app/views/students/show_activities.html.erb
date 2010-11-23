@@ -1,0 +1,22 @@
+<h1> Show Activities  </h1>
+
+<h2>Student: <%=@student.name %>  </h2>
+<h2> Group: <%=@group.number %> </h2>
+
+<b>Activities</b>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Amount of Comments </th>
+    <th>Status </th>
+    </tr>
+    <tr>
+    <% @group.activities.each do |activity| %>
+      <td><%= activity.title %> </td>
+      <td> 0  </td>
+      <td> Unknown  </td>
+    </tr>
+  <% end %>
+</table>
+
+

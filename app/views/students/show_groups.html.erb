@@ -6,11 +6,18 @@
 
 <p>
   <b>Groups:</b>
-  <ul>
-    <% @student.groups.each do |g| %>
-      <li><%=h g.course.code %> - <%=h g.course.name %></li>
-    <% end %>
-  </ul>
-</p>
+  <table>
+    <tr>
+      <th> Course Code </th>
+      <th> Course Name </th>
+      <th> Subject Activities </th>
+    </tr>
+    <% @student.groups.each do |group| %>
+      <td><%=group.course.code%></td>
+      <td><%=group.course.name%></td>
+      <td> <%=link_to 'Display', :controller => "students", :action => "show_activities",  :id => @student, :group_id => group.id %></td>
+    </tr>
+  <% end %>
+</table>
 
 <%= link_to 'Back', @student %>
