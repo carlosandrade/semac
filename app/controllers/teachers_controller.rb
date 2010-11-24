@@ -37,10 +37,6 @@ class TeachersController < ApplicationController
     @teacher = Teacher.find(params[:id])
   end
 
-  def show_groups
-    @teacher = Teacher.find(params[:id])
-  end
-
   # POST /teachers
   # POST /teachers.xml
   def create
@@ -86,4 +82,25 @@ class TeachersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  # Mostra as turmas do professor com id passado como parametro
+  def show_groups
+    @teacher = Teacher.find(params[:id])
+  end
+
+  # Permite ao professor gerenciar a turma com id passado como parametro
+  def manage_group
+    @group = Group.find(params[:id])
+  end
+ 
+  # Mostra para o professor os alunos de sua turma com id passada como parametro
+  def show_students
+    @group = Group.find(params[:id])
+  end
+
+  # Mostra as atividades de uma turma de um professor
+  def show_activities
+    @group = Group.find(params[:id])
+  end
+
 end

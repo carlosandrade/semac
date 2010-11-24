@@ -3948,3 +3948,918 @@ Completed in 3ms (DB: 1) | 302 Found [http://test.host/students/980190962?]
   [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
   [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
 
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.3ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-24 22:42:40', 'MATA62', '2010-11-24 22:42:40')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-24 22:42:40', 'MATA62', '2010-11-24 22:42:40')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.3ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:42:40', '2010-11-24 22:42:40', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:42:40', '2010-11-24 22:42:40', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.2ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:42:40', '2010-11-24 22:42:40', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.2ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:42:40', '2010-11-24 22:42:40', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:42:40', '2010-11-24 22:42:40', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.2ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:42:40', '2010-11-24 22:42:40', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "activities" [0m
+
+
+Processing ActivitiesController#create (for 0.0.0.0 at 2010-11-24 19:42:42) [POST]
+  Parameters: {"activity"=>{}}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 54ms (View: 48, DB: 3) | 200 OK [http://test.host/activities?]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "activities" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "activities" [0m
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#destroy (for 0.0.0.0 at 2010-11-24 19:42:42) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+  [4;35;1mActivity Destroy (0.2ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 980190962[0m
+Redirected to http://test.host/activities
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/activities/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "activities" [0m
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#edit (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+Rendering template within layouts/activities
+Rendering activities/edit
+Completed in 14ms (View: 13, DB: 1) | 200 OK [http://test.host/activities/980190962/edit]
+
+
+Processing ActivitiesController#index (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://test.host/activities]
+
+
+Processing ActivitiesController#new (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/activities/new]
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#show (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/activities/980190962]
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#update (for 0.0.0.0 at 2010-11-24 19:42:42) [PUT]
+  Parameters: {"activity"=>{}, "id"=>"980190962"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+Rendering template within layouts/activities
+Rendering activities/edit
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://test.host/activities/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "courses" [0m
+
+
+Processing CoursesController#create (for 0.0.0.0 at 2010-11-24 19:42:42) [POST]
+  Parameters: {"course"=>{}}
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+Rendering template within layouts/courses
+Rendering courses/new
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://test.host/courses?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "courses" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "courses" [0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#destroy (for 0.0.0.0 at 2010-11-24 19:42:42) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+  [4;35;1mCourse Destroy (0.2ms)[0m   [0mDELETE FROM "courses" WHERE "id" = 980190962[0m
+Redirected to http://test.host/courses
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/courses/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "courses" [0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#edit (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+Rendering template within layouts/courses
+Rendering courses/edit
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/courses/980190962/edit]
+
+
+Processing CoursesController#index (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" [0m
+Rendering template within layouts/courses
+Rendering courses/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/courses]
+
+
+Processing CoursesController#new (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+Rendering template within layouts/courses
+Rendering courses/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/courses/new]
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#show (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+Rendering template within layouts/courses
+Rendering courses/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/courses/980190962]
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#update (for 0.0.0.0 at 2010-11-24 19:42:42) [PUT]
+  Parameters: {"course"=>{}, "id"=>"980190962"}
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'MyString' AND "courses".id <> 980190962) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MyStri' AND "courses".id <> 980190962) LIMIT 1[0m
+Rendering template within layouts/courses
+Rendering courses/edit
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://test.host/courses/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "groups" [0m
+
+
+Processing GroupsController#create (for 0.0.0.0 at 2010-11-24 19:42:42) [POST]
+  Parameters: {"group"=>{}}
+Rendering template within layouts/groups
+Rendering groups/new
+Completed in 38ms (View: 31, DB: 0) | 200 OK [http://test.host/groups?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "groups" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "groups" [0m
+  [4;35;1mGroup Load (0.2ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#destroy (for 0.0.0.0 at 2010-11-24 19:42:42) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 980190962 ) [0m
+  [4;36;1mGroup Destroy (0.2ms)[0m   [0;1mDELETE FROM "groups" WHERE "id" = 980190962[0m
+Redirected to http://test.host/groups
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/groups/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "groups" [0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#edit (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGroup Load (0.2ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+Rendering template within layouts/groups
+Rendering groups/edit
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/groups/980190962/edit]
+
+
+Processing GroupsController#index (for 0.0.0.0 at 2010-11-24 19:42:42) [GET]
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" [0m
+Rendering template within layouts/groups
+Rendering groups/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://test.host/groups]
+
+
+Processing GroupsController#new (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+Rendering template within layouts/groups
+Rendering groups/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/groups/new]
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#show (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+Rendering template within layouts/groups
+Rendering groups/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/groups/980190962]
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#update (for 0.0.0.0 at 2010-11-24 19:42:43) [PUT]
+  Parameters: {"group"=>{}, "id"=>"980190962"}
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+Rendering template within layouts/groups
+Rendering groups/edit
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://test.host/groups/980190962?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "students" [0m
+
+
+Processing StudentsController#create (for 0.0.0.0 at 2010-11-24 19:42:43) [POST]
+  Parameters: {"student"=>{}}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+Rendering template within layouts/students
+Rendering students/new
+Completed in 31ms (View: 24, DB: 1) | 200 OK [http://test.host/students?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "students" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "students" [0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#destroy (for 0.0.0.0 at 2010-11-24 19:42:43) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+  [4;35;1mGroup Load (0.2ms)[0m   [0mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 980190962 ) [0m
+  [4;36;1mStudent Destroy (0.2ms)[0m   [0;1mDELETE FROM "students" WHERE "id" = 980190962[0m
+Redirected to http://test.host/students
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/students/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "students" [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#edit (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+Rendering template within layouts/students
+Rendering students/edit
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/students/980190962/edit]
+
+
+Processing StudentsController#index (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/students]
+
+
+Processing StudentsController#new (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+Rendering template within layouts/students
+Rendering students/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/students/new]
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#show (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+Rendering template within layouts/students
+Rendering students/show
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/students/980190962]
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#update (for 0.0.0.0 at 2010-11-24 19:42:43) [PUT]
+  Parameters: {"id"=>"980190962", "student"=>{}}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'MyString' AND "students".id <> 980190962) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'MyString' AND "students".id <> 980190962) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1 AND "students".id <> 980190962) LIMIT 1[0m
+Rendering template within layouts/students
+Rendering students/edit
+Completed in 19ms (View: 15, DB: 1) | 200 OK [http://test.host/students/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teachers" [0m
+
+
+Processing TeachersController#create (for 0.0.0.0 at 2010-11-24 19:42:43) [POST]
+  Parameters: {"teacher"=>{}}
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+Rendering template within layouts/teachers
+Rendering teachers/new
+Completed in 31ms (View: 23, DB: 1) | 200 OK [http://test.host/teachers?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teachers" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "teachers" [0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#destroy (for 0.0.0.0 at 2010-11-24 19:42:43) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+  [4;36;1mTeacher Destroy (0.2ms)[0m   [0;1mDELETE FROM "teachers" WHERE "id" = 980190962[0m
+Redirected to http://test.host/teachers
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/teachers/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "teachers" [0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#edit (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+Rendering template within layouts/teachers
+Rendering teachers/edit
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/teachers/980190962/edit]
+
+
+Processing TeachersController#index (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+  [4;36;1mTeacher Load (0.5ms)[0m   [0;1mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 94ms (View: 93, DB: 0) | 200 OK [http://test.host/teachers]
+
+
+Processing TeachersController#new (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+Rendering template within layouts/teachers
+Rendering teachers/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/teachers/new]
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#show (for 0.0.0.0 at 2010-11-24 19:42:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/teachers/980190962]
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#update (for 0.0.0.0 at 2010-11-24 19:42:43) [PUT]
+  Parameters: {"teacher"=>{}, "id"=>"980190962"}
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'MyString' AND "teachers".id <> 980190962) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'MyString' AND "teachers".id <> 980190962) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 1 AND "teachers".id <> 980190962) LIMIT 1[0m
+Rendering template within layouts/teachers
+Rendering teachers/edit
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://test.host/teachers/980190962?]
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-24 22:43:38', 'MATA62', '2010-11-24 22:43:38')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-24 22:43:38', 'MATA62', '2010-11-24 22:43:38')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:43:38', '2010-11-24 22:43:38', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:43:38', '2010-11-24 22:43:38', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:43:38', '2010-11-24 22:43:38', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:43:38', '2010-11-24 22:43:38', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:43:38', '2010-11-24 22:43:38', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:43:38', '2010-11-24 22:43:38', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Pauloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "activities" [0m
+
+
+Processing ActivitiesController#create (for 0.0.0.0 at 2010-11-24 19:43:40) [POST]
+  Parameters: {"activity"=>{}}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 46ms (View: 40, DB: 3) | 200 OK [http://test.host/activities?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "activities" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "activities" [0m
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#destroy (for 0.0.0.0 at 2010-11-24 19:43:40) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+  [4;35;1mActivity Destroy (0.3ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 980190962[0m
+Redirected to http://test.host/activities
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/activities/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "activities" [0m
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#edit (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+Rendering template within layouts/activities
+Rendering activities/edit
+Completed in 14ms (View: 13, DB: 1) | 200 OK [http://test.host/activities/980190962/edit]
+
+
+Processing ActivitiesController#index (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://test.host/activities]
+
+
+Processing ActivitiesController#new (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/activities/new]
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#show (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/activities/980190962]
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+
+
+Processing ActivitiesController#update (for 0.0.0.0 at 2010-11-24 19:43:40) [PUT]
+  Parameters: {"activity"=>{}, "id"=>"980190962"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 980190962) [0m
+Rendering template within layouts/activities
+Rendering activities/edit
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://test.host/activities/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "courses" [0m
+
+
+Processing CoursesController#create (for 0.0.0.0 at 2010-11-24 19:43:40) [POST]
+  Parameters: {"course"=>{}}
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+Rendering template within layouts/courses
+Rendering courses/new
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://test.host/courses?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "courses" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "courses" [0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#destroy (for 0.0.0.0 at 2010-11-24 19:43:40) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+  [4;35;1mCourse Destroy (0.3ms)[0m   [0mDELETE FROM "courses" WHERE "id" = 980190962[0m
+Redirected to http://test.host/courses
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/courses/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "courses" [0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#edit (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+Rendering template within layouts/courses
+Rendering courses/edit
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/courses/980190962/edit]
+
+
+Processing CoursesController#index (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" [0m
+Rendering template within layouts/courses
+Rendering courses/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/courses]
+
+
+Processing CoursesController#new (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+Rendering template within layouts/courses
+Rendering courses/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/courses/new]
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#show (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+Rendering template within layouts/courses
+Rendering courses/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/courses/980190962]
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+
+
+Processing CoursesController#update (for 0.0.0.0 at 2010-11-24 19:43:40) [PUT]
+  Parameters: {"course"=>{}, "id"=>"980190962"}
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 980190962) [0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'MyString' AND "courses".id <> 980190962) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MyStri' AND "courses".id <> 980190962) LIMIT 1[0m
+Rendering template within layouts/courses
+Rendering courses/edit
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://test.host/courses/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "groups" [0m
+
+
+Processing GroupsController#create (for 0.0.0.0 at 2010-11-24 19:43:40) [POST]
+  Parameters: {"group"=>{}}
+Rendering template within layouts/groups
+Rendering groups/new
+Completed in 37ms (View: 31, DB: 0) | 200 OK [http://test.host/groups?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "groups" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "groups" [0m
+  [4;35;1mGroup Load (0.2ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#destroy (for 0.0.0.0 at 2010-11-24 19:43:40) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 980190962 ) [0m
+  [4;36;1mGroup Destroy (0.3ms)[0m   [0;1mDELETE FROM "groups" WHERE "id" = 980190962[0m
+Redirected to http://test.host/groups
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/groups/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "groups" [0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#edit (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGroup Load (0.2ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+Rendering template within layouts/groups
+Rendering groups/edit
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/groups/980190962/edit]
+
+
+Processing GroupsController#index (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" [0m
+Rendering template within layouts/groups
+Rendering groups/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/groups]
+
+
+Processing GroupsController#new (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+Rendering template within layouts/groups
+Rendering groups/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/groups/new]
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#show (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+Rendering template within layouts/groups
+Rendering groups/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/groups/980190962]
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+
+
+Processing GroupsController#update (for 0.0.0.0 at 2010-11-24 19:43:40) [PUT]
+  Parameters: {"group"=>{}, "id"=>"980190962"}
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 980190962) [0m
+Rendering template within layouts/groups
+Rendering groups/edit
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://test.host/groups/980190962?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "students" [0m
+
+
+Processing StudentsController#create (for 0.0.0.0 at 2010-11-24 19:43:40) [POST]
+  Parameters: {"student"=>{}}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+Rendering template within layouts/students
+Rendering students/new
+Completed in 31ms (View: 23, DB: 1) | 200 OK [http://test.host/students?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "students" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "students" [0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#destroy (for 0.0.0.0 at 2010-11-24 19:43:40) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+  [4;35;1mGroup Load (0.2ms)[0m   [0mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 980190962 ) [0m
+  [4;36;1mStudent Destroy (0.4ms)[0m   [0;1mDELETE FROM "students" WHERE "id" = 980190962[0m
+Redirected to http://test.host/students
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/students/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "students" [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#edit (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+Rendering template within layouts/students
+Rendering students/edit
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/students/980190962/edit]
+
+
+Processing StudentsController#index (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/students]
+
+
+Processing StudentsController#new (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+Rendering template within layouts/students
+Rendering students/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/students/new]
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#show (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+Rendering template within layouts/students
+Rendering students/show
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/students/980190962]
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+
+
+Processing StudentsController#update (for 0.0.0.0 at 2010-11-24 19:43:40) [PUT]
+  Parameters: {"id"=>"980190962", "student"=>{}}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 980190962) [0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'MyString' AND "students".id <> 980190962) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'MyString' AND "students".id <> 980190962) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1 AND "students".id <> 980190962) LIMIT 1[0m
+Rendering template within layouts/students
+Rendering students/edit
+Completed in 19ms (View: 15, DB: 1) | 200 OK [http://test.host/students/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teachers" [0m
+
+
+Processing TeachersController#create (for 0.0.0.0 at 2010-11-24 19:43:40) [POST]
+  Parameters: {"teacher"=>{}}
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+Rendering template within layouts/teachers
+Rendering teachers/new
+Completed in 31ms (View: 23, DB: 1) | 200 OK [http://test.host/teachers?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teachers" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "teachers" [0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#destroy (for 0.0.0.0 at 2010-11-24 19:43:40) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+  [4;36;1mTeacher Destroy (0.3ms)[0m   [0;1mDELETE FROM "teachers" WHERE "id" = 980190962[0m
+Redirected to http://test.host/teachers
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/teachers/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "teachers" [0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#edit (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+Rendering template within layouts/teachers
+Rendering teachers/edit
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/teachers/980190962/edit]
+
+
+Processing TeachersController#index (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 94ms (View: 93, DB: 0) | 200 OK [http://test.host/teachers]
+
+
+Processing TeachersController#new (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+Rendering template within layouts/teachers
+Rendering teachers/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/teachers/new]
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#show (for 0.0.0.0 at 2010-11-24 19:43:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/teachers/980190962]
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+
+
+Processing TeachersController#update (for 0.0.0.0 at 2010-11-24 19:43:40) [PUT]
+  Parameters: {"teacher"=>{}, "id"=>"980190962"}
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 980190962) [0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'MyString' AND "teachers".id <> 980190962) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'MyString' AND "teachers".id <> 980190962) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 1 AND "teachers".id <> 980190962) LIMIT 1[0m
+Rendering template within layouts/teachers
+Rendering teachers/edit
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://test.host/teachers/980190962?]
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mCourse Create (0.4ms)[0m   [0;1mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-24 22:44:10', 'MATA62', '2010-11-24 22:44:10')[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Fisica 3') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA50') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia I Engenharia I Engenharia I Engenharia I Engenhar') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;35;1mCourse Create (0.3ms)[0m   [0mINSERT INTO "courses" ("name", "created_at", "code", "updated_at") VALUES('Engenharia de Software I', '2010-11-24 22:44:10', 'MATA62', '2010-11-24 22:44:10')[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATB12') LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" = 'Engenharia de Software I') LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mCourse Load (0.1ms)[0m   [0;1mSELECT "courses".id FROM "courses" WHERE ("courses"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCourse Load (0.1ms)[0m   [0mSELECT "courses".id FROM "courses" WHERE ("courses"."code" = 'MATA62') LIMIT 1[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Create (0.4ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:44:10', '2010-11-24 22:44:10', 20101255, 'roberto@null.com')[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.3ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:44:10', '2010-11-24 22:44:10', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 0) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Create (0.4ms)[0m   [0;1mINSERT INTO "students" ("name", "created_at", "updated_at", "registration", "email") VALUES('Jose Roberto', '2010-11-24 22:44:10', '2010-11-24 22:44:10', 20101255, 'roberto@null.com')[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Joao Paulo') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'joao@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = 'roberto@null.com') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Jose Roberto') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 20101255) LIMIT 1[0m
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."name" = 'Lucas') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."email" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."name" = ' aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [4;35;1mStudent Load (0.1ms)[0m   [0mSELECT "students".id FROM "students" WHERE ("students"."email" = 'bigname@null.com') LIMIT 1[0m
+  [4;36;1mStudent Load (0.1ms)[0m   [0;1mSELECT "students".id FROM "students" WHERE ("students"."registration" = 1232351) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Create (0.4ms)[0m   [0;1mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:44:10', '2010-11-24 22:44:10', 123, 'paulo@null.com')[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 444) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.3ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:44:10', '2010-11-24 22:44:10', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 145) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 0) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Create (0.4ms)[0m   [0mINSERT INTO "teachers" ("name", "created_at", "updated_at", "registration", "email") VALUES('Paulo', '2010-11-24 22:44:10', '2010-11-24 22:44:10', 123, 'paulo@null.com')[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Juc') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'juc@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Paulo') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.1ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" IS NULL) LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."name" = 'Pauloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo') LIMIT 1[0m
+  [4;35;1mTeacher Load (0.1ms)[0m   [0mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."email" = 'paulo@null.com') LIMIT 1[0m
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT "teachers".id FROM "teachers" WHERE ("teachers"."registration" = 123) LIMIT 1[0m

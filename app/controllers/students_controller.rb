@@ -37,24 +37,32 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
+# Mostra as turma nas quais o aluno está matriculado
   def show_groups
     @student = Student.find(params[:id])
   end
 
+# Mostra as atividades de um determinado aluno em determinada turma
   def show_activities
    @student = Student.find(params[:id])
    @group = Group.find(params[:group_id])
   end
 
+# Adiciona um aluno em determinada turma
   def add_group
-    @error = false
+    error = false
+    @messege = "Student successfully added to group"
     @student = Student.find(params[:id])
     begin
       group = Group.find(params[:group_id])
+    # se uma turma com id informado não existe,
+    # muda a mensagem para "turma não existente"
     rescue ActiveRecord::RecordNotFound
-      @error = true
+      error = true
+      @messege = "Informed group doesn't exist"
     end
-    if !@error
+    # Não adiciona o aluno a turma se ela não existir
+    if !error
       @student.groups.push(group)
     end
   end

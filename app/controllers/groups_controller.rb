@@ -37,18 +37,6 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
   end
 
-  def show_students
-    @group = Group.find(params[:id])
-  end
-
-  def show_activities
-    @group = Group.find(params[:id])
-  end
-  
-  def manage_group
-    @group = Group.find(params[:id])
-  end
-
   # POST /groups
   # POST /groups.xml
   def create
