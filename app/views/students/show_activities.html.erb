@@ -13,7 +13,7 @@
     <tr>
     <% @group.activities.each do |activity| %>
       <td><%= activity.title %> </td>
-      <td> 0  </td>
+      <td><%= activity.comments.size %></td>
       <td> Unknown  </td>
     </tr>
   <% end %>

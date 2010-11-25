@@ -8,7 +8,7 @@
   <b>Groups:</b>
   <ul>
     <% @teacher.groups.each do |g| %>
-      <li><%= link_to g.course.code, :action => "manage_group", :id => @teacher, :group_id => g %> - <%=h g.course.name %></li>
+      <li><%= link_to g.course.code, :action => "manage_group", :id => g %> - <%=h g.course.name %></li>
     <% end %>
   </ul>
 </p>

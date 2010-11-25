@@ -12,5 +12,5 @@
 </p>
 <%= link_to 'Show Students', :action => "show_students", :id => @group %> |
 <%= link_to 'Show Activities', :action => "show_activities", :id => @group %> |
-<%= link_to 'Create Activity', :controller => "activities", :action => "new" %> |
+<%= link_to 'Create Activity', :controller => "activities", :action => "new", :id => @group %> |
 <%= link_to 'Back', :action => "show_groups", :id => @group.teacher %>

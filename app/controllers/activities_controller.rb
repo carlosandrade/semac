@@ -25,7 +25,9 @@ class ActivitiesController < ApplicationController
   # GET /activities/new.xml
   def new
     @activity = Activity.new
-
+    # O id da turma dona da atividade é passado como parametro
+    @group_id = params[:id]
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @activity }
@@ -41,6 +43,9 @@ class ActivitiesController < ApplicationController
   # POST /activities.xml
   def create
     @activity = Activity.new(params[:activity])
+    # O id da turma que estava como hidden no formulario
+    # é adicionado a atividade criada
+    @activity.group_id = params[:group_id]
 
     respond_to do |format|
       if @activity.save
