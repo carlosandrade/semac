@@ -6,12 +6,19 @@
 
 <p>
   <b>Activities:</b>
-  <ul>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Delivery Date</th>
+    <th>Specification</th>
+  </tr>
+  <tr>
     <% @group.activities.each do |a| %>
-      <li><%=h a.title %> - <%=h a.delivery_date %>
-          <p><%=h a.specification%></p>
-      </li>
-    <% end %>
-  </ul>
+      <td><%=h a.title %> </td>
+      <td><%=h a.delivery_date %></td>
+      <td><%=h a.specification %></td>
+    </tr>
+  <% end %>
+</table>
 </p>
 <%= link_to 'Back', :action => "manage_group", :id => @group %> 
