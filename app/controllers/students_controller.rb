@@ -14,6 +14,8 @@ class StudentsController < ApplicationController
   # GET /students/1.xml
   def show
     @student = Student.find(params[:id])
+    @groups = Group.all
+    
 
     respond_to do |format|
       format.html # show.html.erb

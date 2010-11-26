@@ -16,20 +16,22 @@
     <%= f.text_field :number %>
   </p>
   <p>
-    Course <br />
-  
-<%=  select_tag 'course_id', options_for_select(@courses.collect{|c| [c.name, c.id] }) %>
-      
-</p>   
-
-<p>
-
-Teachers <br />
-  
-<%=  select_tag 'teacher_id', options_for_select(@teachers.collect{|t| [t.name, t.id] }) %>
-      
-</p>
     
+    <% @courses.each do |c|  %>
+        <%= select_tag 'c_ids[]', c.id -%>
+       
+        <br />
+    <% end %>
+ 
+
+
+    <%= f.label :course_id %><br />
+    <%= f.text_field :course_id %>
+  </p>
+  <p>
+    <%= f.label :teacher_id %><br />
+    <%= f.text_field :teacher_id %>
+  </p>   
   <p>
     <%= f.submit 'Create' %>
   </p>

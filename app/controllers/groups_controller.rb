@@ -23,9 +23,12 @@ class GroupsController < ApplicationController
 
   # GET /groups/new
   # GET /groups/new.xml
+
   def new
     @group = Group.new
-
+    @courses = Course.all
+    @teachers = Teacher.all
+  
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @group }
@@ -41,7 +44,8 @@ class GroupsController < ApplicationController
   # POST /groups.xml
   def create
     @group = Group.new(params[:group])
-
+  @group.course_id = params[:course_id]
+  @group.teacher_id = params[:teacher_id]
     respond_to do |format|
       if @group.save
         flash[:notice] = 'Group was successfully created.'
