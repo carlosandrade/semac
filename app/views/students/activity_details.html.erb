@@ -1,0 +1,20 @@
+<h1><%=h @activity.title %></h1>
+
+<p>
+  <b>Specification</b>
+  <br />
+  <%=h @activity.specification %>
+</p>
+
+<p>
+  <%= link_to "Submit", :action => "submit_file", :id => @student_id, :activity_id => @activity %>
+</p>
+
+<p>
+  <b>Comments</b>
+  <ul>
+    <% @activity.comments.each do |c| %>
+      <li><%=h a.body %></li>
+    <% end %>
+  </ul>
+</p>

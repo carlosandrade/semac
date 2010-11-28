@@ -1,7 +1,7 @@
 class Student < ActiveRecord::Base
 
   has_and_belongs_to_many :groups, :join_table => "students_groups"
-
+  has_many :submissions
 
 #Name validations
 

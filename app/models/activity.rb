@@ -3,6 +3,7 @@ class Activity < ActiveRecord::Base
 #Relationship
   belongs_to :group
   has_many :comments
+  has_many :submissions
 
 #Title validations
   

@@ -1,7 +1,7 @@
-<h1> Show Activities  </h1>
+<h1>Show Activities</h1>
 
-<h2>Student: <%=@student.name %>  </h2>
-<h2>Group: <%=@group.number %> </h2>
+<h2>Student: <%=@student.name %></h2>
+<h2>Group: <%=@group.number %></h2>
 
 <b>Activities</b>
 <table>
@@ -11,12 +11,12 @@
     <th>Status </th>
     </tr>
     <tr>
-    <% @group.activities.each do |activity| %>
-      <td><%= activity.title %> </td>
-      <td><%= activity.comments.size %></td>
+    <% @group.activities.each do |a| %>
+      <td><%= link_to a.title, :action => "activity_details", :id => @student, :activity_id => a.id %></td>
+      <td><%= a.comments.size %></td>
       <td> Unknown  </td>
     </tr>
     <% end %>
 </table>
 
-
+<%= link_to 'Back', :action => "show_groups", :id => @student %>

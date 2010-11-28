@@ -1,0 +1,14 @@
+<h1>Submission</h1>
+<p>
+  <% form_tag :action => 'submit', :student_id => @student_id, :activity_id => @activity_id do %>
+    <b>Name</b>
+    <br />
+    <%= text_field_tag "name" %>
+    <br />
+    <b>Path</b>
+    <br />
+    <%= text_field_tag "path" %>
+    <br />
+    <%= submit_tag 'Submit Activity' %>
+  <% end %>
+</p>

@@ -69,6 +69,36 @@ class StudentsController < ApplicationController
     end
   end
 
+# Mostra os detalhes de uma atividade do aluno
+  def activity_details
+    @student_id = params[:id]
+    @activity = Activity.find(params[:activity_id])
+  end
+
+# Mostra a página para o aluno submeter uma atividade
+  def submit_file
+    @student_id = params[:id]
+    @activity_id = params[:activity_id]
+  end
+
+# Submete a atividade do aluno
+  def submit
+    student = Student.find(params[:student_id])
+    activity = Activity.find(params[:activity_id])
+
+    attach = Attachment.new (:name => params[:name], :extension => params[:path].split(".").last, :path => params[:path])
+    attach.save
+
+    submission = Submission.new
+    submission.save
+
+    submission.attachment = attach
+    
+    student.submissions.push(submission)
+    activity.submissions.push(submission)
+
+  end
+
   # POST /students
   # POST /students.xml
   def create

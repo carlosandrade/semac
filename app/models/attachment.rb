@@ -1,4 +1,5 @@
 class Attachment < ActiveRecord::Base
+  belongs_to :submission
 
 # Name validations
   #Does not allow attachment name to be empty
