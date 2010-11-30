@@ -1,0 +1,21 @@
+# No papel de professor, eu quero ver os códigos e nomes das turmas sob minha responsabilidade no semestre corrente, para gerenciar cada uma delas. (Já foi feita / DONE) 
+
+# No papel de professor de uma turma, eu quero ver o número de matrícula e o nome de cada estudante matriculado, para gerenciar andamento de atividades de cada aluno matriculado. 
+
+# No papel de professor de uma turma, eu quero publicar uma atividade, definindo seu título, sua especificação e sua data de entrega, para definir uma atividade que deve ser realizada pelos estudantes matriculados na turma. 
+
+# No papel de estudante de uma turma, eu quero ver atividades publicadas, número de comentários postados e seu status (se submeti atividade ou nāo), para acompanhar atividade. 
+
+# No papel de estudante de uma turma, eu quero fazer uma ou mais submissões de atividade especificada pelo professor até a data prevista, de modo que o professor possa fazer a avaliação da minha atividade.
+
+# No papel de professor de uma turma, eu quero ter acesso às respectivas submissões feitas por estudantes matriculados, relacionadas a uma atividade específica, para proceder à avaliação de cada uma após o prazo ter expirado. 
+
+
+
+Extra 
+
+# No papel de professor de uma turma, eu quero reabrir o sistema, definindo uma nova data limite para submissões fora do prazo relacionadas a uma atividade específica, para permitir submissōes feitas depois do prazo original estabelecido até a nova data.
+
+# No papel de professor de uma turma, quero gerar resultados de cada atividade em uma planilha, para exportar resultados e manipular fora do sistema.
+
+# No papel de professor de uma turma, quero gerar resultados gerais para cada turma sob minha responsabilidade em uma planilha, para exportar resultados e manipular fora do sistema. 

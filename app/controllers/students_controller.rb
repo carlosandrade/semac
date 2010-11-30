@@ -77,6 +77,7 @@ class StudentsController < ApplicationController
 
 # Mostra a página para o aluno submeter uma atividade
   def submit_file
+    @attachment = Attachment.new
     @student_id = params[:id]
     @activity_id = params[:activity_id]
   end
@@ -86,7 +87,8 @@ class StudentsController < ApplicationController
     student = Student.find(params[:student_id])
     activity = Activity.find(params[:activity_id])
 
-    attach = Attachment.new (:name => params[:name], :extension => params[:path].split(".").last, :path => params[:path])
+    attach = Attachment.new(params[:attachment])  
+    attach.extension = attach.path.split(".").last
     attach.save
 
     submission = Submission.new
@@ -96,7 +98,7 @@ class StudentsController < ApplicationController
     
     student.submissions.push(submission)
     activity.submissions.push(submission)
-
+    redirect_to :action => 'index'
   end
 
   # POST /students

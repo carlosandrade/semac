@@ -1,0 +1,8 @@
+-> A relação de submission para student não está na UML
+-> Esquecemos de criar o teste de activity e implementar para que o titulo nao possa ter mais que 45 caracters
+-> Não limitamos para menos caracters na tabela do attachment no banco de dados
+-> Aluno está podendo se cadastrar na mesma turma mais de 1 vez
+-> Excessões não são tratadas quando aluno submete atividade (controller student, action submit). Submit cria o attachment e também o submission associado ao aluno e atividade corretos, só não cria a mensagem de submetido com sucesso nem a mensagem quando ocorre um erro na criação/salvamento.
+-> Não lista as submissoes
+-> Não armazena de fato o arquivo no banco de dados
+
