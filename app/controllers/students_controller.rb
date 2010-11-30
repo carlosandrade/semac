@@ -46,8 +46,21 @@ class StudentsController < ApplicationController
 
 # Mostra as atividades de um determinado aluno em determinada turma
   def show_activities
-   @student = Student.find(params[:id])
-   @group = Group.find(params[:group_id])
+    @student = Student.find(params[:id])
+    @group = Group.find(params[:group_id])
+    
+    submission_status = []
+    @group.activities.each do |a|
+      match = false
+      a.submissions.each do |s|
+        if s.student_id == @student.id
+          match = true
+          break
+        end
+      end
+      submission_status << (match ? "Done" : "Pending")
+    end
+    @status = submission_status.to_enum
   end
 
 # Adiciona um aluno em determinada turma

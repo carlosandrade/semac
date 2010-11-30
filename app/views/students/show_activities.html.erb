@@ -9,13 +9,13 @@
     <th>Name</th>
     <th>Amount of Comments </th>
     <th>Status </th>
-    </tr>
-    <tr>
+  </tr>
+  <tr>
     <% @group.activities.each do |a| %>
       <td><%= link_to a.title, :action => "activity_details", :id => @student, :activity_id => a.id %></td>
-      <td><%= a.comments.size %></td>
-      <td> Unknown  </td>
-    </tr>
+      <td><%=h a.comments.size %></td>
+      <td><%=h @status.next %></td>
+  </tr>
     <% end %>
 </table>
 
