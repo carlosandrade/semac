@@ -3,6 +3,7 @@ class Group < ActiveRecord::Base
   belongs_to :teacher
   has_many :activities
   has_and_belongs_to_many :students, :join_table => "students_groups"
+  has_one :notification
 
 # Group Validations
   # Does not allow group without a year

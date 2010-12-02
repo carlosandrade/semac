@@ -22053,3 +22053,89 @@ Rendering students/show_activities
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
 Completed in 55ms (View: 16, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStudents (20101106194248)
+Migrating to ChangeStudentNameAndEmailFromVarchar255ToVarchar100 (20101106224520)
+Migrating to CreateActivities (20101107000246)
+Migrating to CreateTeachers (20101107015927)
+Migrating to ChangeTeacherNameAndEmailFromVarchar255ToVarchar100 (20101107161925)
+Migrating to CreateGroups (20101107173824)
+Migrating to CreateJoinTableStudentGroup (20101107230706)
+Migrating to CreateCourses (20101108000054)
+Migrating to CreateInGroupsTeacherId (20101108003945)
+Migrating to CreateInGroupsCourseId (20101108004424)
+Migrating to ChangeCourseNameAndCodeFromVarchar255ToVarchar60AndVarchar6 (20101108014845)
+Migrating to AddInActivitiesGroupId (20101108034231)
+Migrating to CreateComments (20101125032041)
+Migrating to AddInCommentActivityId (20101125032953)
+Migrating to CreateSubmissions (20101128013147)
+Migrating to CreateAttachments (20101128014415)
+Migrating to AddStudentIdInSubmission (20101128034310)
+Migrating to AddActivityIdInSubmission (20101128034320)
+Migrating to AddSubmissionIdInAttachment (20101128034359)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("activities")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("attachments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("courses")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("groups")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("students_groups")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("submissions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("teachers")[0m
+
+
+Processing TeachersController#index (for 127.0.0.1 at 2010-12-02 20:24:41) [GET]
+  [4;36;1mTeacher Load (0.9ms)[0m   [0;1mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 82ms (View: 44, DB: 1) | 200 OK [http://localhost/teachers]
+
+
+Processing TeachersController#show (for 127.0.0.1 at 2010-12-02 20:24:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show
+Completed in 23ms (View: 11, DB: 0) | 200 OK [http://localhost/teachers/1]
+
+
+Processing TeachersController#show_groups (for 127.0.0.1 at 2010-12-02 20:24:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show_groups
+  [4;35;1mGroup Load (0.7ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups".teacher_id = 1) [0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 64ms (View: 49, DB: 2) | 200 OK [http://localhost/teachers/show_groups/1]
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-02 20:24:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 132ms (View: 117, DB: 1) | 200 OK [http://localhost/teachers/manage_group/1]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 20:24:49) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 209ms (View: 196, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
