@@ -20718,3 +20718,1338 @@ Rendering students/show_activities
   [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
 Completed in 51ms (View: 16, DB: 2) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-12-01 22:19:31) [GET]
+  [4;36;1mStudent Load (1.0ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 197ms (View: 156, DB: 1) | 200 OK [http://0.0.0.0/students]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-01 22:19:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (8.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 99ms (View: 47, DB: 9) | 200 OK [http://0.0.0.0/students/1]
+
+
+Processing StudentsController#show_groups (for 127.0.0.1 at 2010-12-01 22:19:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/show_groups
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+Completed in 39ms (View: 29, DB: 1) | 200 OK [http://0.0.0.0/students/show_groups/1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:19:51) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (14.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 145ms (View: 70, DB: 17) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:19:53) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 104ms (View: 92, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:19:55) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = '--- :activity_id
+') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Activity with ID=activity_id):
+  app/controllers/students_controller.rb:95:in `submit_file'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:20:41) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = '--- :activity_id
+') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Activity with ID=activity_id):
+  app/controllers/students_controller.rb:95:in `submit_file'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:21:36) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 80ms (View: 29, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:21:43) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 23ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:21:47) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#show_groups (for 127.0.0.1 at 2010-12-01 22:21:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/show_groups
+  [4;36;1mGroup Load (0.6ms)[0m   [0;1mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://0.0.0.0/students/show_groups/1]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-01 22:21:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 37ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/students/1]
+
+
+Processing TeachersController#index (for 127.0.0.1 at 2010-12-01 22:21:59) [GET]
+  [4;36;1mTeacher Load (0.9ms)[0m   [0;1mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 65ms (View: 55, DB: 1) | 200 OK [http://0.0.0.0/teachers]
+
+
+Processing TeachersController#show (for 127.0.0.1 at 2010-12-01 22:22:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTeacher Load (0.2ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show
+Completed in 104ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/teachers/1]
+
+
+Processing TeachersController#show_groups (for 127.0.0.1 at 2010-12-01 22:22:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeacher Load (0.2ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show_groups
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups".teacher_id = 1) [0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 44ms (View: 29, DB: 1) | 200 OK [http://0.0.0.0/teachers/show_groups/1]
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-01 22:22:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 82ms (View: 71, DB: 1) | 200 OK [http://0.0.0.0/teachers/manage_group/1]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-01 22:22:06) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 303ms (View: 294, DB: 0) | 200 OK [http://0.0.0.0/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-01 22:22:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"BPF/E93bx6UiQcTbbg4twKJJ0NGvgIspLIToKBIMY9o=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade Passada", "delivery_date(2i)"=>"8", "delivery_date(3i)"=>"2", "specification"=>"Especificações"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (44.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-02 01:22:29', 'Atividade Passada', '2010-08-02', '2010-12-02 01:22:29', 'Especificações', 1)[0m
+Redirected to http://0.0.0.0:3000/activities/4
+Completed in 218ms (DB: 44) | 302 Found [http://0.0.0.0/activities]
+
+
+Processing ActivitiesController#show (for 127.0.0.1 at 2010-12-01 22:22:30) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 44ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/activities/4]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-01 22:22:33) [GET]
+  [4;35;1mActivity Load (1.0ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 54ms (View: 44, DB: 1) | 200 OK [http://0.0.0.0/activities]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-12-01 22:22:37) [GET]
+  [4;36;1mStudent Load (12.1ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 30ms (View: 9, DB: 12) | 200 OK [http://0.0.0.0/students]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-01 22:22:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 113ms (View: 94, DB: 1) | 200 OK [http://0.0.0.0/students/1]
+
+
+Processing StudentsController#show_groups (for 127.0.0.1 at 2010-12-01 22:22:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/show_groups
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+Completed in 34ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/students/show_groups/1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:22:40) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.5ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.1ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 55ms (View: 17, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:22:42) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:22:43) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/submit
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-01 22:22:43) [GET]
+  Parameters: {"id"=>"submit"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Student with ID=submit):
+  app/controllers/students_controller.rb:16:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:23:47) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/submit/1?activity_id=4
+Completed in 17ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#submit (for 127.0.0.1 at 2010-12-01 22:23:47) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Student without an ID):
+  app/controllers/students_controller.rb:105:in `submit'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:23:50) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 25ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:23:53) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:23:55) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:23:58) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:23:59) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/submit/1?activity_id=4
+Completed in 19ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#submit (for 127.0.0.1 at 2010-12-01 22:23:59) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Student without an ID):
+  app/controllers/students_controller.rb:105:in `submit'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-12-01 22:24:58) [GET]
+  [4;35;1mStudent Load (0.9ms)[0m   [0mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/students]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-01 22:25:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 114ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/students/1]
+
+
+Processing StudentsController#show_groups (for 127.0.0.1 at 2010-12-01 22:25:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/show_groups
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+Completed in 34ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/students/show_groups/1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:25:03) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.6ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.1ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 58ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:25:05) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:25:06) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/submit?activity_id=4&student_id=1
+Completed in 94ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-01 22:25:06) [GET]
+  Parameters: {"student_id"=>"1", "activity_id"=>"4", "id"=>"submit"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Student with ID=submit):
+  app/controllers/students_controller.rb:16:in `show'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (26.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-12-01 22:26:00) [GET]
+  [4;36;1mStudent Load (0.9ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/students]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-12-01 22:26:03) [GET]
+  [4;35;1mStudent Load (1.2ms)[0m   [0mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/students]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-01 22:26:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;36;1mCourse Load (0.2ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 33ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/students/1]
+
+
+Processing StudentsController#show_groups (for 127.0.0.1 at 2010-12-01 22:26:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/show_groups
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+Completed in 112ms (View: 101, DB: 1) | 200 OK [http://0.0.0.0/students/show_groups/1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:26:07) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.6ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 58ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:26:08) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 19ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:26:09) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=4
+Completed in 20ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:26:10) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:26:13) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=4
+Completed in 19ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:26:13) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:26:18) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+
+ActionView::TemplateError (undefined local variable or method `a' for #<ActionView::Base:0xb665caa0>) on line #17 of app/views/students/activity_details.html.erb:
+14:   <b>Comments</b>
+15:   <ul>
+16:     <% @activity.comments.each do |c| %>
+17:       <li><%=h a.body %></li>
+18:     <% end %>
+19:   </ul>
+20: </p>
+
+    app/views/students/activity_details.html.erb:17
+    app/views/students/activity_details.html.erb:16
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:26:47) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:26:51) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:27:06) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:27:08) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 26ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:27:39) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:27:40) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 26ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:27:45) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 99ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:27:47) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=2
+Completed in 19ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=2]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:27:47) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:27:51) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 22ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:27:52) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=3
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=3]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:27:52) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:28:01) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=3
+Completed in 19ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=3]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:28:01) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:28:06) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 19ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:28:10) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=4
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:28:10) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:32:34) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=4
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:32:34) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:32:38) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:32:39) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 33ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:32:44) [GET]
+  Parameters: {"id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Activity without an ID):
+  app/controllers/students_controller.rb:88:in `activity_details'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (26.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:33:15) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 37ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:33:15) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:33:17) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 25ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:33:18) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:34:48) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:35:46) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 94ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:36:57) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.5ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.3ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.1ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 59ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:36:58) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 25ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:37:01) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.6ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.1ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.1ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 57ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:03) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:37:04) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.5ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 58ms (View: 19, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:06) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:37:08) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.8ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.1ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 52ms (View: 16, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:37) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:37:43) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 33ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:46) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:37:47) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.6ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.3ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 57ms (View: 16, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:49) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:37:50) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=2
+Completed in 19ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=2]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:50) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:37:52) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=2
+Completed in 17ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=2]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:52) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:37:57) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.5ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.3ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 142ms (View: 20, DB: 5) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:37:58) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:38:00) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=3
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=3]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:38:00) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:38:02) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.3ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 130ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:38:03) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:38:05) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=4
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:38:05) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:38:06) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.1ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 60ms (View: 19, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:38:09) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:38:10) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 27ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:38:12) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:34) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 26ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:36) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:39:39) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/submit_file
+Completed in 26ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/submit_file/1?activity_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:40) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:39:44) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.7ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 58ms (View: 17, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:45) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:39:48) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=2
+Completed in 17ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=2]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:48) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:39:51) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.6ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.1ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 57ms (View: 20, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:53) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#submit_file (for 127.0.0.1 at 2010-12-01 22:39:56) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Redirected to http://0.0.0.0:3000/students/activity_details/1?activity_id=4
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/students/submit_file/1?activity_id=4]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:56) [GET]
+  Parameters: {"activity_id"=>"4", "id"=>"1"}
+  [4;35;1mActivity Load (0.2ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 4) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 88ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=4]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:39:57) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.7ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.1ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 61ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:39:59) [GET]
+  Parameters: {"activity_id"=>"3", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 3) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 3) [0m
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=3]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:40:01) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.5ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.1ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 54ms (View: 17, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:40:02) [GET]
+  Parameters: {"activity_id"=>"2", "id"=>"1"}
+  [4;35;1mActivity Load (0.3ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 2) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".activity_id = 2) [0m
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=2]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:40:03) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;35;1mStudent Load (0.2ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;36;1mSubmission Load (0.6ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 57ms (View: 17, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+
+
+Processing StudentsController#activity_details (for 127.0.0.1 at 2010-12-01 22:40:04) [GET]
+  Parameters: {"activity_id"=>"1", "id"=>"1"}
+  [4;36;1mActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/activity_details
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 1) [0m
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/students/activity_details/1?activity_id=1]
+
+
+Processing StudentsController#show_activities (for 127.0.0.1 at 2010-12-01 22:40:07) [GET]
+  Parameters: {"id"=>"1", "group_id"=>"1"}
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mActivity Load (0.5ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities".group_id = 1) [0m
+  [4;35;1mSubmission Load (0.6ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 1) [0m
+  [4;36;1mSubmission Load (0.2ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 2) [0m
+  [4;35;1mSubmission Load (0.2ms)[0m   [0mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 3) [0m
+  [4;36;1mSubmission Load (0.1ms)[0m   [0;1mSELECT * FROM "submissions" WHERE ("submissions".activity_id = 4) [0m
+Rendering template within layouts/students
+Rendering students/show_activities
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 4) [0m
+Completed in 55ms (View: 16, DB: 3) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]

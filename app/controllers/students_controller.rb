@@ -90,9 +90,14 @@ class StudentsController < ApplicationController
 
 # Mostra a página para o aluno submeter uma atividade
   def submit_file
-    @attachment = Attachment.new
     @student_id = params[:id]
     @activity_id = params[:activity_id]
+    delivery_date = Activity.find(params[:activity_id]).delivery_date
+    if Date.today > delivery_date
+      flash[:notice] = 'Activity has expired'
+      redirect_to(:action => "activity_details", :id => @student_id, :activity_id => @activity_id)
+    end
+    @attachment = Attachment.new
   end
 
 # Submete a atividade do aluno

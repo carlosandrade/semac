@@ -7,6 +7,12 @@
 </p>
 
 <p>
+  <b>Delivery Date</b>
+  <br />
+  <%=h @activity.delivery_date %>
+</p>
+
+<p>
   <%= link_to "Submit", :action => "submit_file", :id => @student_id, :activity_id => @activity %>
 </p>
 
@@ -14,7 +20,11 @@
   <b>Comments</b>
   <ul>
     <% @activity.comments.each do |c| %>
-      <li><%=h a.body %></li>
+      <li><%=h c.body %></li>
     <% end %>
   </ul>
+</p>
+
+<p>
+    <%= link_to "Back", :action => "show_activities", :id => @student_id, :group_id => @activity.group_id %>
 </p>

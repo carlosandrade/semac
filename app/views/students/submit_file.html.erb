@@ -13,5 +13,9 @@
     <%= hidden_field_tag :activity_id, @activity_id %>
   <p>
     <%= f.submit 'Submit' %>
+  </p>
   <% end %>
+  <p>
+  <%= link_to "Back", :action => "activity_details", :id => @student_id, :activity_id => @activity_id %>
+  </p>
 </p>
