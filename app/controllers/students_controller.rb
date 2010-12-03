@@ -51,15 +51,16 @@ class StudentsController < ApplicationController
     
     submission_status = []
     @group.activities.each do |a|
-      match = false
-      a.submissions.each do |s|
-        if s.student_id == @student.id
-          match = true
-          break
-        end
+      # Procura por uma submissão desse aluno para essa atividade
+      s = Submission.find(:all, :conditions => {:activity_id => a.id, :student_id => @student.id})
+      # Se 's' for um vetor vazio, nao encontrou tal atividade
+      if s.empty?
+        submission_status << "Pending"
+      else
+        submission_status << "Done"
       end
-      submission_status << (match ? "Done" : "Pending")
     end
+    
     @status = submission_status.to_enum
   end
 
