@@ -15,3 +15,24 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = true
+
+#config.action_mailer.smtp_settings = {
+#  :enable_starttls_auto => true,
+#  :address => 'smtp.gmail.com',
+#  :port => 587,
+#  :domain => 'yourdomain.com.au',
+#  :authentication => :plain,
+#  :user_name => 'semac.rails',
+#  :password => 'semacrails'
+#}
+
+# Using Gmail to send emails
+  #
+#  ActionMailer::Base.default_content_type = "text/html"
+ # ActionMailer::Base.smtp_settings = {
+  #  :address => "smtp.gmail.com",
+   # :port => 587,
+    #:authentication => "rails.semac",
+   # :user_name => "rails.semac@gmail.com",
+   # :password => "railsemac"
+ # }

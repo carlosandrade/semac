@@ -42,13 +42,14 @@ Rails::Initializer.run do |config|
 
   
 end
+
 # Using Gmail to send emails
-  #
-  ActionMailer::Base.default_content_type = "text/html"
-  ActionMailer::Base.smtp_settings = {
-    :address => "smtp.gmail.com",
-    :port => 587,
-    :authentication => "rails.semac",
-    :user_name => "rails.semac@gmail.com",
-    :password => "railsemac"
-  }
+ #
+#  ActionMailer::Base.default_content_type = "text/html"
+# ActionMailer::Base.smtp_settings = {
+#  :address => "smtp.gmail.com",
+# :port => 587,
+#:authentication => "rails.semac",
+# :user_name => "rails.semac@gmail.com",
+# :password => "railsemac"
+# }

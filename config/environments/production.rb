@@ -26,3 +26,13 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+#
+#config.action_mailer.smtp_settings = {
+#  :enable_starttls_auto => true,
+#  :address => 'smtp.gmail.com',
+#  :port => 587,
+#  :domain => 'yourdomain.com.au',
+#  :authentication => :plain,
+#  :user_name => 'semac.rails',
+#  :password => 'semacrails'
+#}
