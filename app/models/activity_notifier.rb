@@ -1,7 +1,7 @@
 class ActivityNotifier < ActionMailer::Base
   def activity_notification(student, teacher, activity)
     
-    recipients "carlosviansi@gmail.com"
+    recipients "davidgorender@gmail.com"
     from "semac.rails@gmail.com"
     subject "New activity available"
     body :student => student, :teacher => teacher, :activity => activity

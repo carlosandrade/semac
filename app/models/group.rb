@@ -5,6 +5,11 @@ class Group < ActiveRecord::Base
   has_and_belongs_to_many :students, :join_table => "students_groups"
   has_one :notification
 
+#Methods
+  def self.student_doesnt_belongs_to(student)
+      @groups = Group.all - student.groups
+  end
+
 # Group Validations
   # Does not allow group without a year
   validates_presence_of :year
