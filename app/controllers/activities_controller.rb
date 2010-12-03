@@ -52,6 +52,13 @@ class ActivitiesController < ApplicationController
         flash[:notice] = 'Activity was successfully created.'
         format.html { redirect_to(@activity) }
         format.xml  { render :xml => @activity, :status => :created, :location => @activity }
+
+        #Also, generate a notification to send to the students enrolled in the group that the activity was created
+      
+        @teacher = @activity.group.teacher
+        @student = @activity.group.students.first
+        ActivityNotifier.deliver_activity_notification(@student, @teacher, @activity)
+
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @activity.errors, :status => :unprocessable_entity }

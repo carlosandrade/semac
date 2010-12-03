@@ -22139,3 +22139,999 @@ Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 20:24:49) [GET]
 Rendering template within layouts/activities
 Rendering activities/new
 Completed in 209ms (View: 196, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing TeachersController#index (for 127.0.0.1 at 2010-12-02 21:25:02) [GET]
+  [4;36;1mTeacher Load (0.8ms)[0m   [0;1mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 51ms (View: 36, DB: 1) | 200 OK [http://localhost/teachers]
+
+
+Processing TeachersController#show (for 127.0.0.1 at 2010-12-02 21:25:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show
+Completed in 24ms (View: 11, DB: 0) | 200 OK [http://localhost/teachers/1]
+
+
+Processing TeachersController#show_groups (for 127.0.0.1 at 2010-12-02 21:25:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show_groups
+  [4;35;1mGroup Load (0.6ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups".teacher_id = 1) [0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 85ms (View: 72, DB: 2) | 200 OK [http://localhost/teachers/show_groups/1]
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-02 21:25:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 2) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 44ms (View: 28, DB: 1) | 200 OK [http://localhost/teachers/manage_group/2]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 21:25:07) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 128ms (View: 116, DB: 0) | 200 OK [http://localhost/activities/new?id=2]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 21:38:25) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://localhost/activities/new?id=2]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 21:38:46) [GET]
+  [4;36;1mActivity Load (1.1ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 64ms (View: 47, DB: 1) | 200 OK [http://localhost/activities]
+
+
+Processing TeachersController#index (for 127.0.0.1 at 2010-12-02 21:38:49) [GET]
+  [4;35;1mTeacher Load (0.9ms)[0m   [0mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 39ms (View: 28, DB: 1) | 200 OK [http://localhost/teachers]
+
+
+Processing TeachersController#new (for 127.0.0.1 at 2010-12-02 21:38:51) [GET]
+Rendering template within layouts/teachers
+Rendering teachers/new
+Completed in 25ms (View: 14, DB: 0) | 200 OK [http://localhost/teachers/new]
+
+
+Processing TeachersController#show (for 127.0.0.1 at 2010-12-02 21:38:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/teachers/1]
+
+
+Processing TeachersController#show_groups (for 127.0.0.1 at 2010-12-02 21:38:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show_groups
+  [4;36;1mGroup Load (0.6ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups".teacher_id = 1) [0m
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mCourse Load (0.4ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 48ms (View: 35, DB: 2) | 200 OK [http://localhost/teachers/show_groups/1]
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-02 21:38:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 45ms (View: 30, DB: 1) | 200 OK [http://localhost/teachers/manage_group/1]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 21:38:57) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 166ms (View: 155, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:39:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.5ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:39:11', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:39:11', 'Especificação', 1)[0m
+
+NameError (undefined local variable or method `activity' for #<ActivitiesController:0xb616caf4>):
+  app/controllers/activities_controller.rb:57:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:40:26) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:40:26', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:40:26', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+
+NameError (undefined local variable or method `student' for #<ActivitiesController:0xb602e778>):
+  app/controllers/activities_controller.rb:58:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:40:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:40:54', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:40:54', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+
+NoMethodError (undefined method `student' for #<ActiveRecord::Associations::BelongsToAssociation:0xb6178958>):
+  app/controllers/activities_controller.rb:58:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:41:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:41:15', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:41:15', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+
+NoMethodError (undefined method `activity_notification' for #<ActivityNotifier:0xb602c400>):
+  app/controllers/activities_controller.rb:59:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:42:02) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:42:02', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:42:02', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `email' for #<Class:0xb6147f74>):
+  app/models/activity_notifier.rb:3:in `activity_notification'
+  app/controllers/activities_controller.rb:59:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:43:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:43:30', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:43:30', 'Especificação', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `student' for #<ActionView::Base:0xb6225e78>) on line #1 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= student.name %>:
+2: 
+3: A new activity is available: <%= activity.title %> from <%= teacher.name %>
+4: 
+
+    app/views/activity_notifier/activity_notification.html.erb:1
+    app/controllers/activities_controller.rb:59:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:44:56) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:44:56', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:44:56', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+SyntaxError (/home/carlos/semac/app/models/activity_notifier.rb:2: formal argument cannot be an instance variable
+  def activity_notification(@student, @teacher, @submission)
+                                    ^
+/home/carlos/semac/app/models/activity_notifier.rb:2: formal argument cannot be an instance variable
+  def activity_notification(@student, @teacher, @submission)
+                                              ^
+/home/carlos/semac/app/models/activity_notifier.rb:2: formal argument cannot be an instance variable
+  def activity_notification(@student, @teacher, @submission)
+                                                           ^):
+  app/controllers/activities_controller.rb:59:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:45:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.4ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:45:54', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:45:54', 'Especificação', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `student' for #<ActionView::Base:0xb6178ca0>) on line #1 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= student.name %>:
+2: 
+3: A new activity is available: <%= activity.title %> from <%= teacher.name %>
+4: 
+
+    app/views/activity_notifier/activity_notification.html.erb:1
+    app/controllers/activities_controller.rb:59:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.9ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:46:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:46:24', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:46:24', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `student' for #<ActionView::Base:0xb625db0c>) on line #1 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= student.name %>:
+2: 
+3: A new activity is available: <%= activity.title %> from <%= teacher.name %>
+4: 
+
+    app/views/activity_notifier/activity_notification.html.erb:1
+    app/controllers/activities_controller.rb:59:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:46:50) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:46:50', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:46:50', 'Especificação', 1)[0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `student' for #<ActionView::Base:0xb607bf8c>) on line #1 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= student.name %>:
+2: 
+3: A new activity is available: <%= activity.title %> from <%= teacher.name %>
+4: 
+
+    app/views/activity_notifier/activity_notification.html.erb:1
+    app/controllers/activities_controller.rb:59:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:47:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:47:44', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:47:44', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `activity' for #<ActionView::Base:0xb616e714>) on line #3 of app/views/activity_notifier/activity_notification.html.erb:
+1: 
+2: 
+3: A new activity is available: <%= activity.title %> from <%= teacher.name %>
+4: 
+5: Specification:
+6: 
+
+    app/views/activity_notifier/activity_notification.html.erb:3
+    app/controllers/activities_controller.rb:59:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:48:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:48:53', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:48:53', 'Especificação', 1)[0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `activity' for #<ActionView::Base:0xb62356fc>) on line #3 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= @student.name %>:
+2: 
+3: A new activity is available: <%= activity.title %> from <%= teacher.name %>
+4: 
+5: Specification:
+6: 
+
+    app/views/activity_notifier/activity_notification.html.erb:3
+    app/controllers/activities_controller.rb:59:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:49:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:49:22', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:49:22', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= @student.name %>:
+2: 
+3: A new activity is available: <%= @activity.title %> from <%= @teacher.name %>
+4: 
+5: Specification:
+6: 
+
+    app/views/activity_notifier/activity_notification.html.erb:3
+    app/controllers/activities_controller.rb:59:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:51:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:51:18', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:51:18', 'Especificação', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= @student.name %>:
+2: 
+3: A new activity is available: <%= @activity.title %> from <%= @teacher.name %>
+4: 
+5: Specification:
+6: 
+
+    app/views/activity_notifier/activity_notification.html.erb:3
+    app/controllers/activities_controller.rb:56:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.1ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:56:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:56:27', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:56:27', 'Especificação', 1)[0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `name' for #<ActiveRecord::Associations::BelongsToAssociation:0xb626c4b8>) on line #3 of app/views/activity_notifier/activity_notification.html.erb:
+1: Hello <%= @student.name %>:
+2: 
+3: A new activity is available: <%= @activity.title %> from <%= @teacher.name %>
+4: 
+5: Specification:
+6: 
+
+    app/views/activity_notifier/activity_notification.html.erb:3
+    app/controllers/activities_controller.rb:60:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:58:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:58:29', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:58:29', 'Especificação', 1)[0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `deadline' for #<Activity:0xb6090e50>) on line #9 of app/views/activity_notifier/activity_notification.html.erb:
+6: 
+7: <%= @activity.specification %>
+8: 
+9: The activity deadline is: <%= @activity.deadline %>
+10: 
+11: Please verify it as soon as possible.
+12: 
+
+    app/views/activity_notifier/activity_notification.html.erb:9
+    app/controllers/activities_controller.rb:60:in `create'
+    app/controllers/activities_controller.rb:50:in `create'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (142.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 21:59:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade com Notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"Especificação"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 00:59:12', 'Atividade com Notificação', '2010-12-03', '2010-12-03 00:59:12', 'Especificação', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa <larissa@dcc.br>
+
+Date: Thu, 2 Dec 2010 21:59:12 -0300
+To: larissa <larissa@dcc.br>
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: Atividade com Notificação from Marcos
+
+Specification:
+
+Especificação
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+Redirected to http://localhost:3000/activities/21
+Completed in 193ms (DB: 2) | 302 Found [http://localhost/activities]
+
+
+Processing ActivitiesController#show (for 127.0.0.1 at 2010-12-02 21:59:12) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 21) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 28ms (View: 14, DB: 0) | 200 OK [http://localhost/activities/21]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 21:59:38) [GET]
+  [4;35;1mActivity Load (3.7ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 173ms (View: 158, DB: 4) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:05) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"21"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 21) [0m
+  [4;35;1mActivity Destroy (0.3ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 21[0m
+Redirected to http://localhost:3000/activities
+Completed in 110ms (DB: 1) | 302 Found [http://localhost/activities/21]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:05) [GET]
+  [4;36;1mActivity Load (2.7ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 155ms (View: 139, DB: 3) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:07) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"20"}
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 20) [0m
+  [4;36;1mActivity Destroy (0.3ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 20[0m
+Redirected to http://localhost:3000/activities
+Completed in 103ms (DB: 1) | 302 Found [http://localhost/activities/20]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:07) [GET]
+  [4;35;1mActivity Load (3.5ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 171ms (View: 157, DB: 4) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:08) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"19"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 19) [0m
+  [4;35;1mActivity Destroy (0.3ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 19[0m
+Redirected to http://localhost:3000/activities
+Completed in 106ms (DB: 1) | 302 Found [http://localhost/activities/19]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:08) [GET]
+  [4;36;1mActivity Load (3.8ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 115ms (View: 100, DB: 4) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:11) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"18"}
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 18) [0m
+  [4;36;1mActivity Destroy (0.2ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 18[0m
+Redirected to http://localhost:3000/activities
+Completed in 105ms (DB: 1) | 302 Found [http://localhost/activities/18]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:11) [GET]
+  [4;35;1mActivity Load (3.3ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 164ms (View: 150, DB: 3) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:12) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"17"}
+  [4;36;1mActivity Load (0.6ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 17) [0m
+  [4;35;1mActivity Destroy (0.2ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 17[0m
+Redirected to http://localhost:3000/activities
+Completed in 72ms (DB: 1) | 302 Found [http://localhost/activities/17]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:12) [GET]
+  [4;36;1mActivity Load (3.1ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 91ms (View: 78, DB: 3) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:13) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"16"}
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 16) [0m
+  [4;36;1mActivity Destroy (0.2ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 16[0m
+Redirected to http://localhost:3000/activities
+Completed in 96ms (DB: 1) | 302 Found [http://localhost/activities/16]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:13) [GET]
+  [4;35;1mActivity Load (3.2ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 103ms (View: 89, DB: 3) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:14) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"15"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 15) [0m
+  [4;35;1mActivity Destroy (0.2ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 15[0m
+Redirected to http://localhost:3000/activities
+Completed in 80ms (DB: 1) | 302 Found [http://localhost/activities/15]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:14) [GET]
+  [4;36;1mActivity Load (2.8ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 97ms (View: 79, DB: 3) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:15) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"14"}
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 14) [0m
+  [4;36;1mActivity Destroy (0.3ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 14[0m
+Redirected to http://localhost:3000/activities
+Completed in 116ms (DB: 1) | 302 Found [http://localhost/activities/14]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:15) [GET]
+  [4;35;1mActivity Load (1.9ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 69ms (View: 59, DB: 2) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:16) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"13"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 13) [0m
+  [4;35;1mActivity Destroy (0.2ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/activities
+Completed in 163ms (DB: 1) | 302 Found [http://localhost/activities/13]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:16) [GET]
+  [4;36;1mActivity Load (1.9ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 65ms (View: 55, DB: 2) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:17) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"12"}
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 12) [0m
+  [4;36;1mActivity Destroy (0.3ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/activities
+Completed in 128ms (DB: 1) | 302 Found [http://localhost/activities/12]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:17) [GET]
+  [4;35;1mActivity Load (2.3ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 81ms (View: 67, DB: 2) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:18) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"11"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 11) [0m
+  [4;35;1mActivity Destroy (0.3ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/activities
+Completed in 126ms (DB: 1) | 302 Found [http://localhost/activities/11]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:18) [GET]
+  [4;36;1mActivity Load (1.7ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 68ms (View: 56, DB: 2) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:20) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"10"}
+  [4;35;1mActivity Load (0.5ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 10) [0m
+  [4;36;1mActivity Destroy (1.3ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/activities
+Completed in 90ms (DB: 2) | 302 Found [http://localhost/activities/10]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:20) [GET]
+  [4;35;1mActivity Load (1.5ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 55ms (View: 44, DB: 1) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:20) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"9"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 9) [0m
+  [4;35;1mActivity Destroy (0.3ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/activities
+Completed in 98ms (DB: 1) | 302 Found [http://localhost/activities/9]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:21) [GET]
+  [4;36;1mActivity Load (1.4ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 53ms (View: 40, DB: 1) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:21) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"8"}
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 8) [0m
+  [4;36;1mActivity Destroy (0.2ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/activities
+Completed in 81ms (DB: 1) | 302 Found [http://localhost/activities/8]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:21) [GET]
+  [4;35;1mActivity Load (1.7ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 60ms (View: 46, DB: 2) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:22) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"7"}
+  [4;36;1mActivity Load (0.5ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 7) [0m
+  [4;35;1mActivity Destroy (0.2ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 7[0m
+Redirected to http://localhost:3000/activities
+Completed in 118ms (DB: 1) | 302 Found [http://localhost/activities/7]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:22) [GET]
+  [4;36;1mActivity Load (1.3ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 44ms (View: 34, DB: 1) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:23) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"6"}
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 6) [0m
+  [4;36;1mActivity Destroy (0.2ms)[0m   [0;1mDELETE FROM "activities" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/activities
+Completed in 123ms (DB: 1) | 302 Found [http://localhost/activities/6]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:23) [GET]
+  [4;35;1mActivity Load (1.1ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 50ms (View: 39, DB: 1) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#destroy (for 127.0.0.1 at 2010-12-02 22:00:24) [DELETE]
+  Parameters: {"authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "id"=>"5"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 5) [0m
+  [4;35;1mActivity Destroy (0.3ms)[0m   [0mDELETE FROM "activities" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/activities
+Completed in 132ms (DB: 1) | 302 Found [http://localhost/activities/5]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:00:24) [GET]
+  [4;36;1mActivity Load (1.3ms)[0m   [0;1mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 45ms (View: 31, DB: 1) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 22:02:01) [GET]
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 29ms (View: 17, DB: 0) | 200 OK [http://localhost/activities/new]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 22:02:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Atividade de notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"testando"}, "group_id"=>""}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 39ms (View: 24, DB: 0) | 200 OK [http://localhost/activities]
+
+
+Processing TeachersController#index (for 127.0.0.1 at 2010-12-02 22:02:20) [GET]
+  [4;35;1mTeacher Load (0.7ms)[0m   [0mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/teachers]
+
+
+Processing TeachersController#show (for 127.0.0.1 at 2010-12-02 22:02:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://localhost/teachers/1]
+
+
+Processing TeachersController#show_groups (for 127.0.0.1 at 2010-12-02 22:02:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/show_groups
+  [4;36;1mGroup Load (0.6ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups".teacher_id = 1) [0m
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 42ms (View: 29, DB: 2) | 200 OK [http://localhost/teachers/show_groups/1]
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-02 22:02:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 32ms (View: 18, DB: 1) | 200 OK [http://localhost/teachers/manage_group/1]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 22:02:26) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 22:02:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"atividade com notificação", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"testando"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 01:02:48', 'atividade com notificação', '2010-12-03', '2010-12-03 01:02:48', 'testando', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa <larissa@dcc.br>
+
+Date: Thu, 2 Dec 2010 22:02:48 -0300
+To: larissa <larissa@dcc.br>
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: atividade com notificação from Marcos
+
+Specification:
+
+testando
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+Redirected to http://localhost:3000/activities/22
+Completed in 133ms (DB: 2) | 302 Found [http://localhost/activities]
+
+
+Processing ActivitiesController#show (for 127.0.0.1 at 2010-12-02 22:02:48) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 22) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 20ms (View: 5, DB: 0) | 200 OK [http://localhost/activities/22]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 22:02:50) [GET]
+  [4;35;1mActivity Load (1.9ms)[0m   [0mSELECT * FROM "activities" [0m
+Rendering template within layouts/activities
+Rendering activities/index
+Completed in 46ms (View: 34, DB: 2) | 200 OK [http://localhost/activities]
