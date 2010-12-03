@@ -23811,3 +23811,694 @@ Processing ActivitiesController#index (for 127.0.0.1 at 2010-12-02 23:34:36) [GE
 Rendering template within layouts/activities
 Rendering activities/index
 Completed in 101ms (View: 87, DB: 3) | 200 OK [http://localhost/activities]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-02 23:49:49) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-02 23:49:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"testando", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"abcder"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.3ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 02:49:53', 'testando', '2010-12-03', '2010-12-03 02:49:53', 'abcder', 1)[0m
+  [4;36;1mGroup Load (0.3ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Thu, 2 Dec 2010 23:49:53 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: testando from Marcos
+
+Specification:
+
+abcder
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+Redirected to http://localhost:3000/activities/37
+Completed in 117ms (DB: 1) | 302 Found [http://localhost/activities]
+
+
+Processing ActivitiesController#show (for 127.0.0.1 at 2010-12-02 23:49:53) [GET]
+  Parameters: {"id"=>"37"}
+  [4;35;1mActivity Load (0.4ms)[0m   [0mSELECT * FROM "activities" WHERE ("activities"."id" = 37) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/activities/37]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:06:20) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 33ms (View: 20, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:06:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"dsad", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"asdasd"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.8ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:06:24', 'dsad', '2010-12-03', '2010-12-03 03:06:24', 'asdasd', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:06:25 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: dsad from Marcos
+
+Specification:
+
+asdasd
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+Redirected to http://localhost:3000/activities/38
+Completed in 749ms (DB: 2) | 302 Found [http://localhost/activities]
+
+
+Processing ActivitiesController#show (for 127.0.0.1 at 2010-12-03 00:06:25) [GET]
+  Parameters: {"id"=>"38"}
+  [4;36;1mActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 38) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 22ms (View: 5, DB: 0) | 200 OK [http://localhost/activities/38]
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-03 00:07:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;35;1mCourse Load (0.5ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 85ms (View: 55, DB: 1) | 200 OK [http://localhost/teachers/manage_group/1]
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-03 00:07:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mGroup Load (0.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;36;1mCourse Load (0.3ms)[0m   [0;1mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;35;1mTeacher Load (0.3ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 32ms (View: 20, DB: 1) | 200 OK [http://localhost/teachers/manage_group/1]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:07:42) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 168ms (View: 156, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:07:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"Blablabla", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"mniminaf"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.8ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:07:49', 'Blablabla', '2010-12-03', '2010-12-03 03:07:49', 'mniminaf', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:07:49 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: Blablabla from Marcos
+
+Specification:
+
+mniminaf
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+ArgumentError (wrong authentication type railssemac):
+  /usr/lib/ruby/1.8/net/smtp.rb:764:in `check_auth_method'
+  /usr/lib/ruby/1.8/net/smtp.rb:548:in `do_start'
+  /usr/lib/ruby/1.8/net/smtp.rb:525:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.6ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-03 00:08:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 74ms (View: 50, DB: 1) | 200 OK [http://localhost/teachers/manage_group/1]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:08:41) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 119ms (View: 106, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:08:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"def", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"asdasd"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.5ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:08:44', 'def', '2010-12-03', '2010-12-03 03:08:44', 'asdasd', 1)[0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mTeacher Load (0.5ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;36;1mStudent Load (1.0ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:08:44 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: def from Marcos
+
+Specification:
+
+asdasd
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+ArgumentError (wrong authentication type railsemac):
+  /usr/lib/ruby/1.8/net/smtp.rb:764:in `check_auth_method'
+  /usr/lib/ruby/1.8/net/smtp.rb:548:in `do_start'
+  /usr/lib/ruby/1.8/net/smtp.rb:525:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:11:00) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 134ms (View: 113, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:11:04) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"dasd", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"defsf"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.5ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:11:04', 'dasd', '2010-12-03', '2010-12-03 03:11:04', 'defsf', 1)[0m
+  [4;35;1mGroup Load (1.3ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:11:04 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: dasd from Marcos
+
+Specification:
+
+defsf
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+Net::SMTPAuthenticationError (535-5.7.1 Username and Password not accepted. Learn more at                   
+):
+  /usr/lib/ruby/1.8/net/smtp.rb:942:in `check_auth_response'
+  /usr/lib/ruby/1.8/net/smtp.rb:733:in `auth_plain'
+  /usr/lib/ruby/1.8/net/smtp.rb:725:in `send'
+  /usr/lib/ruby/1.8/net/smtp.rb:725:in `authenticate'
+  /usr/lib/ruby/1.8/net/smtp.rb:566:in `do_start'
+  /usr/lib/ruby/1.8/net/smtp.rb:525:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.3ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:12:00) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 29ms (View: 17, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:12:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"asda", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"asdasd"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.5ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:12:03', 'asda', '2010-12-03', '2010-12-03 03:12:03', 'asdasd', 1)[0m
+  [4;35;1mGroup Load (0.8ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:12:03 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: asda from Marcos
+
+Specification:
+
+asdasd
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+Net::SMTPAuthenticationError (535-5.7.1 Username and Password not accepted. Learn more at                   
+):
+  /usr/lib/ruby/1.8/net/smtp.rb:942:in `check_auth_response'
+  /usr/lib/ruby/1.8/net/smtp.rb:733:in `auth_plain'
+  /usr/lib/ruby/1.8/net/smtp.rb:725:in `send'
+  /usr/lib/ruby/1.8/net/smtp.rb:725:in `authenticate'
+  /usr/lib/ruby/1.8/net/smtp.rb:566:in `do_start'
+  /usr/lib/ruby/1.8/net/smtp.rb:525:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:17:58) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 135ms (View: 114, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:18:02) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"asdas", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"dasdasdasd"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.5ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:18:02', 'asdas', '2010-12-03', '2010-12-03 03:18:02', 'dasdasdasd', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.5ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:18:02 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: asdas from Marcos
+
+Specification:
+
+dasdasdasd
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+Net::SMTPFatalError (555 5.5.2 Syntax error. v39sm168043yba.19
+):
+  /usr/lib/ruby/1.8/net/smtp.rb:930:in `check_response'
+  /usr/lib/ruby/1.8/net/smtp.rb:899:in `getok'
+  /usr/lib/ruby/1.8/net/smtp.rb:842:in `rcptto'
+  /usr/lib/ruby/1.8/net/smtp.rb:834:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `each'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:654:in `sendmail'
+  /usr/lib/ruby/1.8/net/smtp.rb:526:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.5ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeachersController#manage_group (for 127.0.0.1 at 2010-12-03 00:19:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGroup Load (0.4ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+Rendering template within layouts/teachers
+Rendering teachers/manage_group
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.3ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+Completed in 79ms (View: 52, DB: 1) | 200 OK [http://localhost/teachers/manage_group/1]
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:19:41) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 161ms (View: 147, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:19:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"asds", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"dasdeasaff"}, "group_id"=>"1"}
+  [4;35;1mActivity Create (0.4ms)[0m   [0mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:19:44', 'asds', '2010-12-03', '2010-12-03 03:19:44', 'dasdeasaff', 1)[0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:19:44 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: asds from Marcos
+
+Specification:
+
+dasdeasaff
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+Net::SMTPFatalError (555 5.5.2 Syntax error. a76sm737058yhc.43
+):
+  /usr/lib/ruby/1.8/net/smtp.rb:930:in `check_response'
+  /usr/lib/ruby/1.8/net/smtp.rb:899:in `getok'
+  /usr/lib/ruby/1.8/net/smtp.rb:842:in `rcptto'
+  /usr/lib/ruby/1.8/net/smtp.rb:834:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `each'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:654:in `sendmail'
+  /usr/lib/ruby/1.8/net/smtp.rb:526:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:20:25) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 144ms (View: 120, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:20:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"asdasd", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"asdasdsewee"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.5ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:20:29', 'asdasd', '2010-12-03', '2010-12-03 03:20:29', 'asdasdsewee', 1)[0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.5ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:20:29 -0300
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: asdasd from Marcos
+
+Specification:
+
+asdasdsewee
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+Net::SMTPFatalError (555 5.5.2 Syntax error. 46sm742820yhl.12
+):
+  /usr/lib/ruby/1.8/net/smtp.rb:930:in `check_response'
+  /usr/lib/ruby/1.8/net/smtp.rb:899:in `getok'
+  /usr/lib/ruby/1.8/net/smtp.rb:842:in `rcptto'
+  /usr/lib/ruby/1.8/net/smtp.rb:834:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `each'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:654:in `sendmail'
+  /usr/lib/ruby/1.8/net/smtp.rb:526:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.4ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:25:24) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 31ms (View: 18, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:25:26) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"asd", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"dasdw"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.4ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:25:26', 'asd', '2010-12-03', '2010-12-03 03:25:26', 'dasdw', 1)[0m
+  [4;35;1mGroup Load (0.5ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.5ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.5ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to larissa carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:25:26 -0300
+From: semac.rails@gmail.com
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: asd from Marcos
+
+Specification:
+
+dasdw
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+
+Net::SMTPFatalError (555 5.5.2 Syntax error. q14sm935742ybk.19
+):
+  /usr/lib/ruby/1.8/net/smtp.rb:930:in `check_response'
+  /usr/lib/ruby/1.8/net/smtp.rb:899:in `getok'
+  /usr/lib/ruby/1.8/net/smtp.rb:842:in `rcptto'
+  /usr/lib/ruby/1.8/net/smtp.rb:834:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `each'
+  /usr/lib/ruby/1.8/net/smtp.rb:833:in `rcptto_list'
+  /usr/lib/ruby/1.8/net/smtp.rb:654:in `sendmail'
+  /usr/lib/ruby/1.8/net/smtp.rb:526:in `start'
+  app/controllers/activities_controller.rb:60:in `create'
+  app/controllers/activities_controller.rb:50:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActivitiesController#new (for 127.0.0.1 at 2010-12-03 00:27:03) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/activities
+Rendering activities/new
+Completed in 36ms (View: 23, DB: 0) | 200 OK [http://localhost/activities/new?id=1]
+
+
+Processing ActivitiesController#create (for 127.0.0.1 at 2010-12-03 00:27:05) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwgB68nGm0d5Dv6I/1ZESyN4AoDJA+Qergv/0iROAKQ=", "activity"=>{"delivery_date(1i)"=>"2010", "title"=>"sada", "delivery_date(2i)"=>"12", "delivery_date(3i)"=>"3", "specification"=>"asdasd"}, "group_id"=>"1"}
+  [4;36;1mActivity Create (0.3ms)[0m   [0;1mINSERT INTO "activities" ("created_at", "title", "delivery_date", "updated_at", "specification", "group_id") VALUES('2010-12-03 03:27:05', 'sada', '2010-12-03', '2010-12-03 03:27:05', 'asdasd', 1)[0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 1) [0m
+  [4;36;1mTeacher Load (0.4ms)[0m   [0;1mSELECT * FROM "teachers" WHERE ("teachers"."id" = 1) [0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT * FROM "students" INNER JOIN "students_groups" ON "students".id = "students_groups".student_id WHERE ("students_groups".group_id = 1 ) LIMIT 1[0m
+Sent mail to carlosviansi@gmail.com
+
+Date: Fri, 3 Dec 2010 00:27:05 -0300
+From: semac.rails@gmail.com
+To: carlosviansi@gmail.com
+Subject: New activity available
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hello larissa:
+
+A new activity is available: sada from Marcos
+
+Specification:
+
+asdasd
+
+The activity deadline is: 2010-12-03
+
+Please verify it as soon as possible.
+
+Regards,
+
+CPD Staff
+
+Redirected to http://localhost:3000/activities/47
+Completed in 3930ms (DB: 2) | 302 Found [http://localhost/activities]
+
+
+Processing ActivitiesController#show (for 127.0.0.1 at 2010-12-03 00:27:09) [GET]
+  Parameters: {"id"=>"47"}
+  [4;36;1mActivity Load (0.4ms)[0m   [0;1mSELECT * FROM "activities" WHERE ("activities"."id" = 47) [0m
+Rendering template within layouts/activities
+Rendering activities/show
+Completed in 31ms (View: 12, DB: 0) | 200 OK [http://localhost/activities/47]

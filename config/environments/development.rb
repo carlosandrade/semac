@@ -16,15 +16,21 @@ config.action_controller.perform_caching             = false
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = true
 
-#config.action_mailer.smtp_settings = {
-#  :enable_starttls_auto => true,
-#  :address => 'smtp.gmail.com',
-#  :port => 587,
-#  :domain => 'yourdomain.com.au',
-#  :authentication => :plain,
-#  :user_name => 'semac.rails',
-#  :password => 'semacrails'
-#}
+#set delivery method to smtp
+
+config.action_mailer.delivery_method = :smtp
+
+#smtp delivery configurations
+
+config.action_mailer.smtp_settings = {
+  :enable_starttls_auto => true,
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :domain => 'gmail.com',
+  :authentication => :login,
+  :user_name => "rails.semac@gmail.com",
+  :password => 'railsemac'
+}
 
 # Using Gmail to send emails
   #
