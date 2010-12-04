@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
   # GET /students/1.xml
   def show
     @student = Student.find(params[:id])
-    @groups = Group.all
+    @groups = Group.student_doesnt_belongs_to(@student)
     
 
     respond_to do |format|

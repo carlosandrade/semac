@@ -13,14 +13,12 @@
   <%=h @student.registration %>
 </p>
 
-    <% @groups.each do |g|  %>
-        <%= check_box_tag 'g_ids[]', g.id -%>
-        <%= g.course.name -%> -  <%= g.course.code %> <br />
-      <% end %>
-      
+    
+     
       
       <% form_tag :action => 'add_group', :id => @student do %>
-  <%= text_field_tag "group_id" %>			
+    	
+        <%=  select_tag 'group_id', options_for_select(@groups.collect{|g| [g.course.name, g.course.id] }) %>		
   <%= submit_tag 'Add to Group' %>
 <% end %>
 <br>
