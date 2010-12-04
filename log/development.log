@@ -25189,3 +25189,123 @@ Rendering students/show_activities
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 5) [0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".activity_id = 6) [0m
 Completed in 58ms (View: 21, DB: 4) | 200 OK [http://0.0.0.0/students/show_activities/1?group_id=1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (153.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (129.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStudents (20101106194248)
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101106194248')[0m
+Migrating to ChangeStudentNameAndEmailFromVarchar255ToVarchar100 (20101106224520)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDROP TABLE "students"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(100), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("altered_students")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "altered_students"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(100), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "students"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(100), "email" varchar(100), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("altered_students")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDROP TABLE "altered_students"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101106224520')[0m
+Migrating to CreateActivities (20101107000246)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "specification" text, "delivery_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101107000246')[0m
+Migrating to CreateTeachers (20101107015927)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101107015927')[0m
+Migrating to ChangeTeacherNameAndEmailFromVarchar255ToVarchar100 (20101107161925)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TEMPORARY TABLE "altered_teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("teachers")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "teachers"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(100), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_teachers")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "altered_teachers"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TEMPORARY TABLE "altered_teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(100), "email" varchar(255), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("teachers")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "teachers"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(100), "email" varchar(100), "registration" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_teachers")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDROP TABLE "altered_teachers"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101107161925')[0m
+Migrating to CreateGroups (20101107173824)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "year" integer, "semester" integer, "number" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101107173824')[0m
+Migrating to CreateJoinTableStudentGroup (20101107230706)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "students_groups" ("student_id" integer, "group_id" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101107230706')[0m
+Migrating to CreateCourses (20101108000054)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101108000054')[0m
+Migrating to CreateInGroupsTeacherId (20101108003945)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "groups" ADD "teacher_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101108003945')[0m
+Migrating to CreateInGroupsCourseId (20101108004424)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "groups" ADD "course_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101108004424')[0m
+Migrating to ChangeCourseNameAndCodeFromVarchar255ToVarchar60AndVarchar6 (20101108014845)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("courses")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDROP TABLE "courses"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(60), "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("altered_courses")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "altered_courses"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(60), "code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("courses")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "courses"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(60), "code" varchar(6), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("altered_courses")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "altered_courses"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101108014845')[0m
+Migrating to AddInActivitiesGroupId (20101108034231)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "activities" ADD "group_id" integer[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101108034231')[0m
+Migrating to CreateComments (20101125032041)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101125032041')[0m
+Migrating to AddInCommentActivityId (20101125032953)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "comments" ADD "activity_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101125032953')[0m
+Migrating to CreateSubmissions (20101128013147)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128013147')[0m
+Migrating to CreateAttachments (20101128014415)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "attachments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "extension" varchar(255), "path" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128014415')[0m
+Migrating to AddStudentIdInSubmission (20101128034310)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "submissions" ADD "student_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128034310')[0m
+Migrating to AddActivityIdInSubmission (20101128034320)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "submissions" ADD "activity_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128034320')[0m
+Migrating to AddSubmissionIdInAttachment (20101128034359)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "attachments" ADD "submission_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128034359')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("activities")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("attachments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("courses")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("groups")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("students_groups")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("submissions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("teachers")[0m
