@@ -25095,3 +25095,146 @@ Rendering template within layouts/students
 Rendering students/show
   [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
 Completed in 123ms (View: 15, DB: 2) | 200 OK [http://localhost/students/2]
+
+
+Processing TeachersController#index (for 127.0.0.1 at 2010-12-03 20:41:57) [GET]
+  [4;36;1mTeacher Load (0.9ms)[0m   [0;1mSELECT * FROM "teachers" [0m
+Rendering template within layouts/teachers
+Rendering teachers/index
+Completed in 59ms (View: 37, DB: 1) | 200 OK [http://localhost/teachers]
+
+
+Processing TeachersController#new (for 127.0.0.1 at 2010-12-03 20:42:00) [GET]
+Rendering template within layouts/teachers
+Rendering teachers/new
+Completed in 37ms (View: 23, DB: 0) | 200 OK [http://localhost/teachers/new]
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2010-12-03 20:42:03) [GET]
+  [4;35;1mGroup Load (1.1ms)[0m   [0mSELECT * FROM "groups" [0m
+Rendering template within layouts/groups
+Rendering groups/index
+Completed in 59ms (View: 45, DB: 1) | 200 OK [http://localhost/groups]
+
+
+Processing GroupsController#new (for 127.0.0.1 at 2010-12-03 20:42:04) [GET]
+  [4;36;1mCourse Load (0.5ms)[0m   [0;1mSELECT * FROM "courses" [0m
+  [4;35;1mTeacher Load (0.4ms)[0m   [0mSELECT * FROM "teachers" [0m
+Rendering template within layouts/groups
+Rendering groups/new
+Completed in 119ms (View: 27, DB: 1) | 200 OK [http://localhost/groups/new]
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2010-12-03 20:45:13) [GET]
+  [4;36;1mStudent Load (1.0ms)[0m   [0;1mSELECT * FROM "students" [0m
+Rendering template within layouts/students
+Rendering students/index
+Completed in 32ms (View: 19, DB: 1) | 200 OK [http://localhost/students]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-03 20:45:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" [0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+Rendering template within layouts/students
+Rendering students/show
+
+ActionView::TemplateError (undefined method `name' for #<Group:0xb618adec>) on line #17 of app/views/students/show.html.erb:
+14: </p>
+15: 
+16:     
+17:       <%=  select_tag 'g_ids[]', options_for_select(@groups.collect{|g| [g.name, g.id] }) %>
+18:       
+19:       <% form_tag :action => 'add_group', :id => @student do %>
+20:   <%= text_field_tag "group_id" %>			
+
+    app/views/students/show.html.erb:17
+    app/views/students/show.html.erb:17:in `collect'
+    app/views/students/show.html.erb:17
+    app/controllers/students_controller.rb:20:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-03 20:45:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.7ms)[0m   [0mSELECT * FROM "groups" [0m
+  [4;36;1mGroup Load (0.6ms)[0m   [0;1mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 55ms (View: 24, DB: 2) | 200 OK [http://localhost/students/1]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-03 20:54:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (1.7ms)[0m   [0mSELECT * FROM "groups" [0m
+  [4;36;1mGroup Load (0.6ms)[0m   [0;1mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;35;1mCourse Load (0.3ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 52ms (View: 19, DB: 3) | 200 OK [http://localhost/students/1]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-03 20:59:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.7ms)[0m   [0mSELECT * FROM "groups" [0m
+  [4;36;1mGroup Load (0.5ms)[0m   [0;1mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+Rendering template within layouts/students
+Rendering students/show
+  [4;35;1mCourse Load (0.4ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses"."id" = 2) [0m
+Completed in 48ms (View: 21, DB: 2) | 200 OK [http://localhost/students/1]
+
+
+Processing StudentsController#add_group (for 127.0.0.1 at 2010-12-03 20:59:36) [POST]
+  Parameters: {"commit"=>"Add to Group", "authenticity_token"=>"kDXdWmxywVsFhX1zcHdCnQpjX1m789NGEAoEuhOEjhc=", "id"=>"1", "group_id"=>"2"}
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;35;1mGroup Load (0.4ms)[0m   [0mSELECT * FROM "groups" WHERE ("groups"."id" = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "students_groups" ("student_id", "group_id") VALUES (1, 2)[0m
+Rendering template within layouts/students
+Rendering students/add_group
+Completed in 148ms (View: 3, DB: 1) | 200 OK [http://localhost/students/add_group/1]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-03 20:59:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.7ms)[0m   [0;1mSELECT * FROM "groups" [0m
+  [4;35;1mGroup Load (0.7ms)[0m   [0mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+Rendering template within layouts/students
+Rendering students/show
+Completed in 33ms (View: 6, DB: 2) | 200 OK [http://localhost/students/1]
+
+
+Processing StudentsController#add_group (for 127.0.0.1 at 2010-12-03 21:00:08) [POST]
+  Parameters: {"commit"=>"Add to Group", "authenticity_token"=>"kDXdWmxywVsFhX1zcHdCnQpjX1m789NGEAoEuhOEjhc=", "id"=>"1"}
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+Rendering template within layouts/students
+Rendering students/add_group
+Completed in 25ms (View: 3, DB: 0) | 200 OK [http://localhost/students/add_group/1]
+
+
+Processing StudentsController#show (for 127.0.0.1 at 2010-12-03 21:00:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" WHERE ("students"."id" = 1) [0m
+  [4;36;1mGroup Load (0.6ms)[0m   [0;1mSELECT * FROM "groups" [0m
+  [4;35;1mGroup Load (0.7ms)[0m   [0mSELECT * FROM "groups" INNER JOIN "students_groups" ON "groups".id = "students_groups".group_id WHERE ("students_groups".student_id = 1 ) [0m
+Rendering template within layouts/students
+Rendering students/show
+Completed in 40ms (View: 7, DB: 2) | 200 OK [http://localhost/students/1]
