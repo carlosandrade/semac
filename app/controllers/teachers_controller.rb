@@ -103,4 +103,14 @@ class TeachersController < ApplicationController
     @group = Group.find(params[:id])
   end
 
+  # Mostra as subimissões de uma atividade
+  def activity_submissions
+    @activity = Activity.find(params[:id])
+  end
+
+  def download_submission
+    @attachment = Attachment.find(params[:id])
+    @submission = @attachment.submission
+  end
+
 end

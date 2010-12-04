@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <% @group.activities.each do |a| %>
-      <td><%=h a.title %> </td>
+      <td><%= link_to a.title, :action => 'activity_submissions', :id => a.id %> </td>
       <td><%=h a.delivery_date %></td>
       <td><%=h a.specification %></td>
     </tr>

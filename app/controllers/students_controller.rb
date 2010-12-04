@@ -53,7 +53,7 @@ class StudentsController < ApplicationController
     @group.activities.each do |a|
       # Procura por uma submissão desse aluno para essa atividade
       s = Submission.find(:all, :conditions => {:activity_id => a.id, :student_id => @student.id})
-      # Se 's' for um vetor vazio, nao encontrou tal atividade
+      # Se 's' for um vetor vazio, nao encontrou tal submissão
       if s.empty?
         submission_status << "Pending"
       else
@@ -117,7 +117,8 @@ class StudentsController < ApplicationController
     
     student.submissions.push(submission)
     activity.submissions.push(submission)
-    redirect_to :action => 'index'
+    flash[:notice] = "Submited successfully"
+    redirect_to :action => 'activity_details', :id => student.id, :activity_id => activity.id
   end
 
   # POST /students
