@@ -34394,3 +34394,4 @@ Rendering template within layouts/teachers
 Rendering teachers/activity_details
   [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".activity_id = 5) [0m
 Completed in 22ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/teachers/activity_details/5]
+

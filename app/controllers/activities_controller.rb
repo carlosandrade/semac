@@ -74,7 +74,11 @@ class ActivitiesController < ApplicationController
     respond_to do |format|
       if @activity.update_attributes(params[:activity])
         flash[:notice] = 'Activity was successfully updated.'
+<<<<<<< HEAD
         format.html { redirect_to(:action => 'activity_details', :controller => 'teachers', :id => @activity) }
+=======
+        format.html { redirect_to(@activity) }
+>>>>>>> origin/master
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

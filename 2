@@ -1,0 +1,40 @@
+<h1>New group</h1>
+
+<% form_for(@group) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </p>
+  <p>
+    <%= f.label :semester %><br />
+    <%= f.text_field :semester %>
+  </p>
+  <p>
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </p>
+  <p>
+    
+    <% @courses.each do |c|  %>
+        <%= select_tag 'c_ids[]', c.id -%>
+       
+        <br />
+    <% end %>
+ 
+
+
+    <%= f.label :course_id %><br />
+    <%= f.text_field :course_id %>
+  </p>
+  <p>
+    <%= f.label :teacher_id %><br />
+    <%= f.text_field :teacher_id %>
+  </p>   
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', groups_path %>
