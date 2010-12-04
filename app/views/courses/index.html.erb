@@ -10,7 +10,6 @@
   <tr>
     <td><%=h course.name %></td>
     <td><%=h course.code %></td>
-    <td><%= link_to 'Show', course %></td>
     <td><%= link_to 'Edit', edit_course_path(course) %></td>
     <td><%= link_to 'Destroy', course, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -19,4 +18,5 @@
 
 <br />
 
-<%= link_to 'New course', new_course_path %>
+<%= link_to 'New course', new_course_path %> |
+<%= link_to 'Back', "../cpd"%>

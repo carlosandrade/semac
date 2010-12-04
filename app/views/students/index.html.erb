@@ -12,7 +12,7 @@
     <td><%=h student.name %></td>
     <td><%=h student.email %></td>
     <td><%=h student.registration %></td>
-    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Add to Group', :controller => 'cpd', :action => 'add_to_group', :id => student %></td>
     <td><%= link_to 'Edit', edit_student_path(student) %></td>
     <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -21,4 +21,5 @@
 
 <br />
 
-<%= link_to 'New student', new_student_path %>
+<%= link_to 'New student', new_student_path %> |
+<%= link_to 'Back', "../cpd"%>

@@ -45,7 +45,7 @@ class TeachersController < ApplicationController
     respond_to do |format|
       if @teacher.save
         flash[:notice] = 'Teacher was successfully created.'
-        format.html { redirect_to(@teacher) }
+        format.html { redirect_to(teachers_path) }
         format.xml  { render :xml => @teacher, :status => :created, :location => @teacher }
       else
         format.html { render :action => "new" }
@@ -62,7 +62,7 @@ class TeachersController < ApplicationController
     respond_to do |format|
       if @teacher.update_attributes(params[:teacher])
         flash[:notice] = 'Teacher was successfully updated.'
-        format.html { redirect_to(@teacher) }
+        format.html { redirect_to(teachers_path) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -103,6 +103,11 @@ class TeachersController < ApplicationController
     @group = Group.find(params[:id])
   end
 
+  # Mostra as informações mais detalhadas de uma atividade
+  def activity_details
+    @activity = Activity.find(params[:id])
+  end
+
   # Mostra as subimissões de uma atividade
   def activity_submissions
     @activity = Activity.find(params[:id])
@@ -111,6 +116,16 @@ class TeachersController < ApplicationController
   def download_submission
     @attachment = Attachment.find(params[:id])
     @submission = @attachment.submission
+  end
+
+  # lista teachers
+  def list
+    @teachers = Teacher.all
+
+    respond_to do |format|
+      format.html # list.html.erb
+      format.xml  { render :xml => @teachers }
+    end
   end
 
 end

@@ -45,12 +45,12 @@ class GroupsController < ApplicationController
   # POST /groups.xml
   def create
     @group = Group.new(params[:group])
-  @group.course_id = params[:course_id]
-  @group.teacher_id = params[:teacher_id]
+    @group.course_id = params[:course_id]
+    @group.teacher_id = params[:teacher_id]
     respond_to do |format|
       if @group.save
         flash[:notice] = 'Group was successfully created.'
-        format.html { redirect_to(@group) }
+        format.html { redirect_to(groups_path) }
         format.xml  { render :xml => @group, :status => :created, :location => @group }
       else
         format.html { render :action => "new" }
@@ -67,7 +67,7 @@ class GroupsController < ApplicationController
     respond_to do |format|
       if @group.update_attributes(params[:group])
         flash[:notice] = 'Group was successfully updated.'
-        format.html { redirect_to(@group) }
+        format.html { redirect_to(groups_path) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

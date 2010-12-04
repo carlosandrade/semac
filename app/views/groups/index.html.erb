@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Course</th>
     <th>Year</th>
     <th>Semester</th>
     <th>Number</th>
@@ -9,10 +10,10 @@
 
 <% @groups.each do |group| %>
   <tr>
+    <td><%=h group.course.code %></td>
     <td><%=h group.year %></td>
     <td><%=h group.semester %></td>
     <td><%=h group.number %></td>
-    <td><%= link_to 'Show', group %></td>
     <td><%= link_to 'Edit', edit_group_path(group) %></td>
     <td><%= link_to 'Destroy', group, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -21,4 +22,5 @@
 
 <br />
 
-<%= link_to 'New group', new_group_path %>
+<%= link_to 'New group', new_group_path %> |
+<%= link_to 'Back', "../cpd"%>

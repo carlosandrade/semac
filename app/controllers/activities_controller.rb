@@ -50,7 +50,7 @@ class ActivitiesController < ApplicationController
     respond_to do |format|
       if @activity.save
         flash[:notice] = 'Activity was successfully created.'
-        format.html { redirect_to(@activity) }
+        format.html { redirect_to(:action => 'activity_details', :controller => 'teachers', :id => @activity) }
         format.xml  { render :xml => @activity, :status => :created, :location => @activity }
 
         #Also, generate a notification to send to the students enrolled in the group that the activity was created
@@ -74,7 +74,7 @@ class ActivitiesController < ApplicationController
     respond_to do |format|
       if @activity.update_attributes(params[:activity])
         flash[:notice] = 'Activity was successfully updated.'
-        format.html { redirect_to(@activity) }
+        format.html { redirect_to(:action => 'activity_details', :controller => 'teachers', :id => @activity) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

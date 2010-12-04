@@ -1,5 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
-
+  map.connect 'teachers/list', :controller => 'teachers', :action => 'list'
+  
+  map.connect 'students/list', :controller => 'students', :action => 'list'  
+  
   map.resources :comments
 
   map.resources :groups

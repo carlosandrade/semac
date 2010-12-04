@@ -24,5 +24,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @activity %> |
-<%= link_to 'Back', activities_path %>
+<%= link_to 'Back', :controller => 'teachers', :action => 'activity_details', :id => @activity %> 
