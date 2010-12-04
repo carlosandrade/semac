@@ -1,0 +1,16 @@
+<h1>Activity: <%=h @submission.activity.title %></h1>
+<p>
+  <b>Student: </b><%=h @submission.student.name %>
+</p>
+
+<p>
+  <b>Attachment Name: </b>
+  <%=h @attachment.name %>
+</p>
+
+<p>
+  <b><%= link_to "Download", url_for_file_column ('attachment', 'path'), :target => "_blank" %></b>
+</p>
+
+<br/>
+<%= link_to 'Back', :action => "activity_submissions", :id => @submission.activity_id %> 

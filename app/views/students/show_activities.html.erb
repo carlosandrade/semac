@@ -1,0 +1,23 @@
+<h1>Show Activities</h1>
+
+<h2>Student: <%=@student.name %></h2>
+<h2>Course: <%= @group.course.code %> - <%= @group.course.name %></h2>
+<h2>Group: <%=@group.year %>.<%=@group.semester %> <%=@group.number %></h2>
+
+<b>Activities</b>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Amount of Comments </th>
+    <th>Status </th>
+  </tr>
+  <tr>
+    <% @group.activities.each do |a| %>
+      <td><%= link_to a.title, :action => "activity_details", :id => @student, :activity_id => a.id %></td>
+      <td><%=h a.comments.size %></td>
+      <td><%=h @status.next %></td>
+  </tr>
+    <% end %>
+</table>
+
+<%= link_to 'Back', :action => "show_groups", :id => @student %>

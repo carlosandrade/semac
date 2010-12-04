@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @student.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @student.email %>
+</p>
+
+<p>
+  <b>Registration:</b>
+  <%=h @student.registration %>
+</p>
+
+    
+     
+      
+      <% form_tag :action => 'add_group', :id => @student do %>
+    	
+        <%=  select_tag 'group_id', options_for_select(@groups.collect{|g| [g.course.name, g.course.id] }) %>		
+  <%= submit_tag 'Add to Group' %>
+<% end %>
+<br>
+<%= link_to 'Show Groups', :action => "show_groups", :id => @student %> |
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
+

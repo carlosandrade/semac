@@ -1,0 +1,16 @@
+<p>
+  <b>Course:</b>
+  <%=h @group.course.code %> - <%=h @group.course.name %>
+</p>
+<p>
+  <b>Group:</b>
+  <%=h @group.year %>.<%=h @group.semester %>  <%=h @group.number %>
+</p>
+<p>
+  <b>Teacher:</b>
+  <%=h @group.teacher.name %>
+</p>
+<%= link_to 'Show Students', :action => "show_students", :id => @group %> |
+<%= link_to 'Show Activities', :action => "show_activities", :id => @group %> |
+<%= link_to 'Create Activity', :controller => "activities", :action => "new", :id => @group %> |
+<%= link_to 'Back', :action => "show_groups", :id => @group.teacher %>
