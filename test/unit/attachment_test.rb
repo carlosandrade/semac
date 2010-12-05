@@ -2,7 +2,8 @@ require 'test_helper'
 
 class AttachmentTest < ActiveSupport::TestCase
   def setup 
-    @attach = Attachment.new(:name => "Trabalho", :extension => "zip", :path => "/caminho/do/anexo")
+    file_folder = File.join(ENV['HOME'],"/teste") 
+    @attach = Attachment.new(:name => "Trabalho", :extension => "zip", :path => File.read(file_folder) )
   end
 
   def teardown
@@ -24,11 +25,6 @@ class AttachmentTest < ActiveSupport::TestCase
   test "should have a path" do
     @attach.path = nil
     assert !@attach.save, "Saved attachment without a path"
-  end
-
-  test "path should not exceed 100" do
-    @attach.path = "/caminho/do/anexooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
-    assert !@attach.save, "Attachment with a path over 100 chars has been saved"
   end
 
   # Extension tests
