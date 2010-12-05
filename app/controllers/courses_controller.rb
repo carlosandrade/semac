@@ -62,11 +62,7 @@ class CoursesController < ApplicationController
     respond_to do |format|
       if @course.update_attributes(params[:course])
         flash[:notice] = 'Course was successfully updated.'
-<<<<<<< HEAD
         format.html { redirect_to(courses_path) }
-=======
-        format.html { redirect_to(@course) }
->>>>>>> origin/master
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
