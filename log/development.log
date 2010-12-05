@@ -34396,7 +34396,6 @@ Rendering teachers/activity_details
 Completed in 22ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/teachers/activity_details/5]
 
 
-
 Processing CpdController#index (for 127.0.0.1 at 2010-12-04 23:09:29) [GET]
 Rendering cpd/index
 Completed in 65ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/cpd]
@@ -34599,3 +34598,4 @@ Processing CpdController#index (for 127.0.0.1 at 2010-12-04 23:18:12) [GET]
 Rendering template within layouts/cpd
 Rendering cpd/index
 Completed in 5ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/cpd]
+
