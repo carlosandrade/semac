@@ -1,0 +1,31 @@
+<h1><%=h @activity.title %></h1>
+
+<p>
+  <b>Specification</b>
+  <br />
+  <%=h @activity.specification %>
+</p>
+
+<p>
+  <b>Delivery Date</b>
+  <br />
+  <%=h @activity.delivery_date %>
+</p>
+
+<p>
+  <%= link_to "Submissions", :action => "activity_submissions", :id => @activity %>
+</p>
+
+<p>
+  <b>Comments</b>
+  <ul>
+    <% @activity.comments.each do |c| %>
+      <li><%=h c.body %></li>
+    <% end %>
+  </ul>
+</p>
+
+<p>
+    <%= link_to 'Edit', edit_activity_path(@activity) %> | 
+    <%= link_to "Back", :action => "show_activities", :id => @activity.group_id %>
+</p>

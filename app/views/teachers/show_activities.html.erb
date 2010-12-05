@@ -1,0 +1,23 @@
+<p>
+  <b>Group:</b>
+  <%=h @group.year %>.<%=h @group.semester %>  <%=h @group.number %>
+  </ br>
+</p>
+
+<p>
+  <b>Activities:</b>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Delivery Date</th>
+  </tr>
+  <tr>
+    <% @group.activities.each do |a| %>
+      <td><%= link_to a.title, :action => 'activity_details', :id => a.id %> </td>
+      <td><%=h a.delivery_date %></td>
+    </tr>
+  <% end %>
+</table>
+</p>
+<br />
+<%= link_to 'Back', :action => "manage_group", :id => @group %> 

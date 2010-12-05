@@ -1,0 +1,2 @@
+module CpdHelper
+end

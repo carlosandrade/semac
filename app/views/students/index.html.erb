@@ -1,0 +1,25 @@
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Registration</th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%=h student.name %></td>
+    <td><%=h student.email %></td>
+    <td><%=h student.registration %></td>
+    <td><%= link_to 'Add to Group', :controller => 'cpd', :action => 'add_to_group', :id => student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New student', new_student_path %> |
+<%= link_to 'Back', "../cpd"%>

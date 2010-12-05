@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @student.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @student.email %>
+</p>
+
+<p>
+  <b>Registration:</b>
+  <%=h @student.registration %>
+</p>
+
+<br>
+<%= link_to 'Show Groups', :action => "show_groups", :id => @student %> |
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,24 @@
+<p>
+  <b>Student:</b>
+  <%=h @student.name %> - <%=h @student.registration %>
+  </ br>
+</p>
+
+<p>
+  <b>Groups:</b>
+  <table>
+    <tr>
+      <th> Course Code </th>
+      <th> Course Name </th>
+      <th> Subject Activities </th>
+    </tr>
+    <% @student.groups.each do |g| %>
+      <td><%=g.course.code%></td>
+      <td><%=g.course.name%></td>
+      <td> <%=link_to 'Display', :action => "show_activities",  :id => @student, :group_id => g.id %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+<%= link_to 'Back', @student %>

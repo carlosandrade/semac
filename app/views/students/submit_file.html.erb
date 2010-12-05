@@ -1,0 +1,21 @@
+<h1>Submission</h1>
+<p>
+  <% form_for (@attachment, :url => { :action => 'submit'}, :html => { :multipart => true }) do |f|%>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :path %><br />
+    <%= file_column_field 'attachment', 'path' %>
+  </p>
+    <%= hidden_field_tag :student_id, @student_id %>
+    <%= hidden_field_tag :activity_id, @activity_id %>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+  <% end %>
+  <p>
+  <%= link_to "Back", :action => "activity_details", :id => @student_id, :activity_id => @activity_id %>
+  </p>
+</p>

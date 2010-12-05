@@ -1,0 +1,30 @@
+<h1>Activity: <%=h @activity.title %></h1>
+<p>
+  <b>Course: </b>
+  <%=h @activity.group.course.code %> - <%=h @activity.group.course.name %>
+</p>
+
+<p>
+  <b>Group: </b>
+  <%=h @activity.group.year %>.<%=h @activity.group.semester %>  <%=h @activity.group.number %>
+</p>
+
+<p>
+  <b>Submissions: </b>
+</p>
+<table>
+  <tr>
+    <th>Student Name</th>
+    <th>Date</th>
+    <th>Download File</th>
+  </tr>
+  <tr>
+    <% @activity.submissions.each do |s| %>
+      <td><%=h s.student.name %> </td>
+      <td><%=h s.created_at %></td>
+      <td><%= link_to "Download", :action => "download_submission", :id => s.attachment %></td>
+    </tr>
+  <% end %>
+</table>
+<br/>
+<%= link_to 'Back', :action => "activity_details", :id => @activity %> 
